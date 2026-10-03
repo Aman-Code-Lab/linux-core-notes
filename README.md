@@ -26,10 +26,16 @@
  
  ## 📦 Major Linux Distributions (Distros)
 A "Distribution" takes the base Linux kernel and bundles it with an installer program, system utilities, and package managers.
+
 **Debian:** One of the oldest, most historically trusted open-source foundations. Highly stable.
+
 **Ubuntu:** Built on top of Debian; currently the most popular client distribution for cloud web nodes.
+
 **Fedora:** Red Hat's testing ground for bleeding-edge enterprise capabilities.
+
 **CentOS / Rocky Linux:** Downstream binary-compatible enterprise distributions widely used across server farms.
+
 **Red Hat Enterprise Linux (RHEL):** Commercial enterprise standard providing stable platform deployments with premium support channels.
+
 **SUSE Linux Enterprise:** Popular infrastructure server foundation used across complex corporate setups.
  
