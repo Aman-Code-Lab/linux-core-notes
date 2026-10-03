@@ -1,4 +1,4 @@
-# linux-core-notes
+# 📓linux-core-notes
 ## what is linux
 as we know it is an operating system. it is reliable and secure than other:
 ## key featuers of linux
