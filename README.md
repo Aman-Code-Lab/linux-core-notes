@@ -79,6 +79,8 @@ The **Kernel** is a core computer program running in a secure, privileged layer 
 
 ### ⚙️ Primary Management Operations Performed by a Kernel:
 
+<img width="1408" height="768" alt="ad61b5e3-8e84-4b3d-94f6-71cc621dd782" src="https://github.com/user-attachments/assets/977281fa-c97d-4d16-8a5a-ebaf506635a2" />
+
 **Resource Management:** Evaluates and decides exactly which running system processes secure access rights to the physical computing pipelines.
 
 **Memory Management:** Maintains absolute execution access over hardware storage maps; allocates and cleans RAM space dynamically without process collision errors.
