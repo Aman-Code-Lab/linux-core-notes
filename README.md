@@ -63,6 +63,8 @@ A "Distribution" takes the base Linux kernel and bundles it with an installer pr
 **Output Processing Array:** Once low-level operations clear, the final output text response traces directly onto the terminal logs screen.
 
 ### 🏁 Top Shell Environments in Linux
+<img width="1408" height="768" alt="7e779e7f-f0d5-4d8a-9a4e-676b5848d7fd" src="https://github.com/user-attachments/assets/4fe27a61-764c-4896-b228-1a65aa7a80d4" />
+
 
 **Bash (Bourne Again Shell):** The universal baseline execution software and standard environment across enterprise distributions like RHEL and CentOS.
 
