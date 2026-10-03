@@ -40,6 +40,6 @@ A "Distribution" takes the base Linux kernel and bundles it with an installer pr
 **SUSE Linux Enterprise:** Popular infrastructure server foundation used across complex corporate setups.
  
 ## 🏗️ Structural Basics of Kernel & Shell
-
+### 🔬 The Linux Architecture Breakdown
 <img width="447" height="447" alt="images" src="https://github.com/user-attachments/assets/00a5cfdd-80b2-4ede-89f2-fb8e402d8308" />
 
