@@ -1,7 +1,7 @@
 # 📓linux-core-notes
-## what is linux
+## 🧑‍💻what is linux
 as we know it is an operating system. it is reliable and secure than other:
-## key featuers of linux
+## 🗝️key featuers of linux
 - **open source:** anyone can see and modify the codes.
 - **secure & stable:** highly resistant to viruses and crashes.
 - **multi-user:** multiple users can access resources simultaneously
