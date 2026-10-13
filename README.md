@@ -42,12 +42,12 @@
   </a>
 </p>
 
-<h2 id="history">🕰️ 01. History of Linux</h2>
-<h2 id="what-is-linux">🧑‍💻 02. What Is Linux?</h2>
-<h2 id="linux-vs-unix">⚖️ 03. Linux vs Unix</h2>
-<h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
-<h2 id="distributions">📦 05. Major Linux Distributions</h2>
-<h2 id="architecture">🏗️ 06. Linux Architecture: Kernel &amp; Shell</h2>
+
+
+
+
+
+
 <h2 id="gnu-project">🧩 07. The GNU Project</h2>
 <h2 id="understanding-shell">🐚 08. Understanding the Shell</h2>
 <h2 id="popular-shells">🏁 09. Popular Linux Shells</h2>
@@ -77,7 +77,7 @@
   </a>
 </p>
 
-<h2>🕰️ 01. History of Linux</h2>
+<h2 id="history">🕰️ 01. History of Linux</h2>
 
 <table>
 <tr>
@@ -112,8 +112,7 @@ Linux was created by <b>Linus Torvalds in 1991</b> as a Unix-like kernel. Inspir
 
 ---
 
-<h2>🧑‍💻 02. What Is Linux?</h2>
-
+<h2 id="what-is-linux">🧑‍💻 02. What Is Linux?</h2>
 <table>
 <tr>
 <td width="65%" valign="top">
@@ -146,7 +145,7 @@ Linux is an open-source, Unix-like operating system ecosystem built around the L
 
 ---
 
-<h2>⚖️ 03. Linux vs Unix</h2>
+<h2 id="linux-vs-unix">⚖️ 03. Linux vs Unix</h2>
 
 <p>
 Linux is a Unix-like operating system kernel, while Unix refers to an older family of operating systems and related standards. Linux was inspired by Unix but was developed independently.
@@ -187,11 +186,12 @@ Linux is a Unix-like operating system kernel, while Unix refers to an older fami
 
 ---
 
-<h2>🌐 04. Linux Is Everywhere</h2>
-
+<h2 id="linux-vs-unix">⚖️ 03. Linux vs Unix</h2>
 <table>
 <tr>
 <td width="33%" valign="top">
+  
+<h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
 
 ### 📱 Smartphones
 
@@ -223,7 +223,7 @@ Linux is the dominant operating system family in the TOP500 supercomputer rankin
 
 ---
 
-<h2>📦 05. Major Linux Distributions</h2>
+<h2 id="distributions">📦 05. Major Linux Distributions</h2>
 
 <p>
 A Linux distribution combines the Linux kernel with system utilities, package managers, and applications to create a usable operating system.
@@ -290,7 +290,7 @@ A Linux distribution combines the Linux kernel with system utilities, package ma
 
 ---
 
-<h2>🏗️ 06. Linux Architecture: Kernel & Shell</h2>
+<h2 id="architecture">🏗️ 06. Linux Architecture: Kernel &amp; Shell</h2>
 
 <table>
 <tr>
