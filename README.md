@@ -1,153 +1,36 @@
 <h1 align="left">🐧 Linux Core Notes</h1>
-<!-- ═══════════════════════════════════════ -->
-<!-- 📚 LINUX NOTES — CLICKABLE BADGE INDEX -->
-<!-- ═══════════════════════════════════════ -->
+<!-- 📚 CLICKABLE BADGE INDEX -->
 
-<h2 id="index">📚 LINUX NOTES — QUICK NAVIGATION</h2>
+<h2 id="index">📚 Linux Core Notes — Index</h2>
 
 <p align="center">
-  <a href="#linux-intro">
-    <img src="https://img.shields.io/badge/01-Linux%20Introduction-blue?style=for-the-badge" alt="Linux Introduction">
-  </a>
-  <a href="#linux-features">
-    <img src="https://img.shields.io/badge/02-Key%20Features-green?style=for-the-badge" alt="Key Features">
-  </a>
-  <a href="#linux-history">
-    <img src="https://img.shields.io/badge/03-Linux%20History-orange?style=for-the-badge" alt="Linux History">
-  </a>
-  <a href="#linux-vs-unix">
-    <img src="https://img.shields.io/badge/04-Linux%20vs%20Unix-purple?style=for-the-badge" alt="Linux vs Unix">
-  </a>
-  <a href="#gnu-project">
-    <img src="https://img.shields.io/badge/05-GNU%20Project-red?style=for-the-badge" alt="GNU Project">
-  </a>
-  <a href="#filesystem-hierarchy">
-    <img src="https://img.shields.io/badge/06-File%20System%20Hierarchy-795548?style=for-the-badge" alt="File System Hierarchy">
-  </a>
-  <a href="#basic-commands">
-    <img src="https://img.shields.io/badge/07-Basic%20Commands-007ec6?style=for-the-badge" alt="Basic Commands">
-  </a>
-  <a href="#navigation-commands">
-    <img src="https://img.shields.io/badge/08-Navigation-2ea44f?style=for-the-badge" alt="Navigation Commands">
-  </a>
-  <a href="#file-types">
-    <img src="https://img.shields.io/badge/09-File%20Types-ff9800?style=for-the-badge" alt="File Types">
-  </a>
-  <a href="#users-groups">
-    <img src="https://img.shields.io/badge/10-Users%20%26%20Groups-9c27b0?style=for-the-badge" alt="Users and Groups">
-  </a>
-  <a href="#permissions">
-    <img src="https://img.shields.io/badge/11-File%20Permissions-e91e63?style=for-the-badge" alt="File Permissions">
-  </a>
-  <a href="#boot-process">
-    <img src="https://img.shields.io/badge/12-Boot%20Process-607d8b?style=for-the-badge" alt="Boot Process">
-  </a>
-  <a href="#package-management">
-    <img src="https://img.shields.io/badge/13-Package%20Management-795548?style=for-the-badge" alt="Package Management">
-  </a>
-  <a href="#process-management">
-    <img src="https://img.shields.io/badge/14-Process%20Management-2196f3?style=for-the-badge" alt="Process Management">
-  </a>
-  <a href="#environment-variables">
-    <img src="https://img.shields.io/badge/15-Environment%20Variables-4caf50?style=for-the-badge" alt="Environment Variables">
-  </a>
-  <a href="#networking">
-    <img src="https://img.shields.io/badge/16-Networking-ff5722?style=for-the-badge" alt="Networking">
-  </a>
-  <a href="#services">
-    <img src="https://img.shields.io/badge/17-Services%20%26%20Daemons-673ab7?style=for-the-badge" alt="Services and Daemons">
-  </a>
-  <a href="#filesystem-types">
-    <img src="https://img.shields.io/badge/18-Filesystem%20Types-009688?style=for-the-badge" alt="Filesystem Types">
-  </a>
-  <a href="#redirection-pipes">
-    <img src="https://img.shields.io/badge/19-Redirection%20%26%20Pipes-3f51b5?style=for-the-badge" alt="Redirection and Pipes">
-  </a>
-  <a href="#command-structure">
-    <img src="https://img.shields.io/badge/20-Command%20Structure-607d8b?style=for-the-badge" alt="Command Structure">
-  </a>
-  <a href="#file-paths">
-    <img src="https://img.shields.io/badge/21-File%20Paths-8bc34a?style=for-the-badge" alt="File Paths">
-  </a>
-  <a href="#text-editors">
-    <img src="https://img.shields.io/badge/22-Text%20Editors-ff9800?style=for-the-badge" alt="Text Editors">
-  </a>
-  <a href="#shell-scripting">
-    <img src="https://img.shields.io/badge/23-Shell%20Scripting-00bcd4?style=for-the-badge" alt="Shell Scripting">
-  </a>
-  <a href="#advantages-limitations">
-    <img src="https://img.shields.io/badge/24-Pros%20%26%20Cons-9c27b0?style=for-the-badge" alt="Advantages and Limitations">
-  </a>
-  <a href="#command-cheat-sheet">
-    <img src="https://img.shields.io/badge/25-Command%20Cheat%20Sheet-e91e63?style=for-the-badge" alt="Command Cheat Sheet">
-  </a>
-  <a href="#quick-revision">
-    <img src="https://img.shields.io/badge/26-Quick%20Revision-2ea44f?style=for-the-badge" alt="Quick Revision">
-  </a>
+  <a href="#linux-intro"><img src="https://img.shields.io/badge/Linux%20Introduction-🐧-blue?style=for-the-badge"></a>
+  <a href="#linux-features"><img src="https://img.shields.io/badge/Key%20Features-⚡-green?style=for-the-badge"></a>
+  <a href="#linux-history"><img src="https://img.shields.io/badge/History-📜-orange?style=for-the-badge"></a>
+  <a href="#linux-vs-unix"><img src="https://img.shields.io/badge/Linux%20vs%20Unix-⚔️-purple?style=for-the-badge"></a>
+  <a href="#gnu-project"><img src="https://img.shields.io/badge/GNU%20Project-🛠️-red?style=for-the-badge"></a>
+  <a href="#filesystem-hierarchy"><img src="https://img.shields.io/badge/File%20System-📂-blueviolet?style=for-the-badge"></a>
+  <a href="#basic-commands"><img src="https://img.shields.io/badge/Basic%20Commands-💻-brightgreen?style=for-the-badge"></a>
+  <a href="#navigation-commands"><img src="https://img.shields.io/badge/Navigation-🧭-blue?style=for-the-badge"></a>
+  <a href="#file-types"><img src="https://img.shields.io/badge/File%20Types-📄-orange?style=for-the-badge"></a>
+  <a href="#users-groups"><img src="https://img.shields.io/badge/Users%20%26%20Groups-👥-purple?style=for-the-badge"></a>
+  <a href="#permissions"><img src="https://img.shields.io/badge/Permissions-🔐-red?style=for-the-badge"></a>
+  <a href="#boot-process"><img src="https://img.shields.io/badge/Boot%20Process-🚀-blue?style=for-the-badge"></a>
+  <a href="#package-management"><img src="https://img.shields.io/badge/Package%20Management-📦-green?style=for-the-badge"></a>
+  <a href="#process-management"><img src="https://img.shields.io/badge/Process%20Management-⚙️-orange?style=for-the-badge"></a>
+  <a href="#environment-variables"><img src="https://img.shields.io/badge/Environment%20Variables-🌐-blueviolet?style=for-the-badge"></a>
+  <a href="#networking"><img src="https://img.shields.io/badge/Networking-🔌-brightgreen?style=for-the-badge"></a>
+  <a href="#services"><img src="https://img.shields.io/badge/Services%20%26%20Daemons-🛎️-blue?style=for-the-badge"></a>
+  <a href="#filesystem-types"><img src="https://img.shields.io/badge/Filesystem%20Types-💽-purple?style=for-the-badge"></a>
+  <a href="#redirection-pipes"><img src="https://img.shields.io/badge/Redirection%20%26%20Pipes-🔀-orange?style=for-the-badge"></a>
+  <a href="#command-structure"><img src="https://img.shields.io/badge/Command%20Structure-⌨️-blue?style=for-the-badge"></a>
+  <a href="#file-paths"><img src="https://img.shields.io/badge/File%20Paths-📍-green?style=for-the-badge"></a>
+  <a href="#text-editors"><img src="https://img.shields.io/badge/Text%20Editors-📝-orange?style=for-the-badge"></a>
+  <a href="#shell-scripting"><img src="https://img.shields.io/badge/Shell%20Scripting-🤖-purple?style=for-the-badge"></a>
+  <a href="#advantages-limitations"><img src="https://img.shields.io/badge/Advantages%20%26%20Limitations-⚖️-blue?style=for-the-badge"></a>
+  <a href="#command-cheat-sheet"><img src="https://img.shields.io/badge/Command%20Cheat%20Sheet-⚡-red?style=for-the-badge"></a>
+  <a href="#quick-revision"><img src="https://img.shields.io/badge/Quick%20Revision-🧠-brightgreen?style=for-the-badge"></a>
 </p>
-
-<hr>
-
-<!-- ═══════════════════════════════════════ -->
-<!-- ADD THESE IDs TO YOUR EXISTING HEADINGS -->
-<!-- ═══════════════════════════════════════ -->
-
-<!-- Example: replace the existing heading with the matching version. -->
-
-<h2 id="linux-intro">🐧 What Is Linux?</h2>
-
-<h2 id="linux-features">🔑 Key Features of Linux</h2>
-
-<h2 id="linux-history">📜 History of Linux</h2>
-
-<h2 id="linux-vs-unix">⚔️ Linux vs Unix</h2>
-
-<h2 id="gnu-project">🛠️ GNU Project</h2>
-
-<h2 id="filesystem-hierarchy">📂 Linux File System Hierarchy</h2>
-
-<h2 id="basic-commands">💻 Basic Linux Commands</h2>
-
-<h2 id="navigation-commands">🧭 Useful Navigation Commands</h2>
-
-<h2 id="file-types">📄 Basic Linux File Types</h2>
-
-<h2 id="users-groups">👥 Linux Users and Groups</h2>
-
-<h2 id="permissions">🔐 File Permissions</h2>
-
-<h2 id="boot-process">🚀 Linux Boot Process</h2>
-
-<h2 id="package-management">📦 Package Management</h2>
-
-<h2 id="process-management">⚙️ Process Management</h2>
-
-<h2 id="environment-variables">🌐 Environment Variables</h2>
-
-<h2 id="networking">🔌 Networking Basics</h2>
-
-<h2 id="services">🛎️ Services and Daemons</h2>
-
-<h2 id="filesystem-types">💽 Filesystem Types</h2>
-
-<h2 id="redirection-pipes">🔀 Redirection and Pipes</h2>
-
-<h2 id="command-structure">⌨️ Linux Command Structure</h2>
-
-<h2 id="file-paths">📍 Absolute vs Relative Paths</h2>
-
-<h2 id="text-editors">📝 Text Editors</h2>
-
-<h2 id="shell-scripting">🤖 Shell Scripting Basics</h2>
-
-<h2 id="advantages-limitations">⚖️ Advantages and Limitations</h2>
-
-<h2 id="command-cheat-sheet">⚡ Essential Command Cheat Sheet</h2>
-
-<h2 id="quick-revision">🧠 Quick Revision</h2>
-
-<hr>
-
 <p align="center">
   <a href="#index">
     <img src="https://img.shields.io/badge/⬆️%20BACK%20TO%20INDEX-Click%20Here-blue?style=for-the-badge" alt="Back to Index">
