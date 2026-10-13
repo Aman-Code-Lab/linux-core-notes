@@ -508,681 +508,493 @@ Linux organizes files and directories in a tree structure that begins at the roo
 </tr>
 </table>
 
-### 💻 Useful Navigation Commands
+<!-- 💻 Useful Navigation Commands -->
+<h2>🧭 Useful Navigation Commands</h2>
 
-```bash
-pwd                 # Show the current directory
+<pre><code>pwd                 # Show the current directory
 ls                  # List files and directories
 ls -la              # List all entries with details
 cd /home            # Move to /home
 cd ~                # Go to your home directory
 cd ..               # Move one directory up
-cd /                # Go to the filesystem root
+cd /                 # Go to the filesystem root
 mkdir projects      # Create a directory
-touch notes.txt     # Create an empty file
+touch notes.txt     # Create an empty file</code></pre>
 
----
+<hr>
 
-<h2>📄 12. Basic Linux File Types</h2><p>
-Linux represents files using different types. Run <code>ls -l</code> to see the file-type character at the beginning of each entry's permissions.
-</p><table>
+<!-- 📄 12. Basic Linux File Types -->
+<h2>📄 12. Basic Linux File Types</h2>
+
+<p>Linux supports different file types. Use <code>ls -l</code> to see the file-type symbol at the beginning of each entry.</p>
+
+<table>
+<tr><th align="left">Symbol</th><th align="left">Type</th><th align="left">Description</th></tr>
+<tr><td><code>-</code></td><td>Regular File</td><td>Stores text, images, programs, and other data.</td></tr>
+<tr><td><code>d</code></td><td>Directory</td><td>Contains files and other directories.</td></tr>
+<tr><td><code>l</code></td><td>Symbolic Link</td><td>Points to another file or directory.</td></tr>
+<tr><td><code>b</code></td><td>Block Device</td><td>Represents devices that support block-based I/O.</td></tr>
+<tr><td><code>c</code></td><td>Character Device</td><td>Represents devices that provide character-based I/O.</td></tr>
+<tr><td><code>p</code></td><td>Named Pipe</td><td>Allows processes to communicate through a FIFO.</td></tr>
+<tr><td><code>s</code></td><td>Socket</td><td>Enables communication between processes.</td></tr>
+</table>
+
+<h3>🔍 File Type Commands</h3>
+
+<pre><code>ls -l                       # View file-type symbols
+file notes.txt              # Identify file content type
+stat notes.txt              # Display file metadata
+ln -s notes.txt link.txt    # Create a symbolic link</code></pre>
+
+<hr>
+
+<!-- 👥 13. Linux Users and Groups -->
+<h2>👥 13. Linux Users and Groups</h2>
+
+<p>Linux uses users and groups to control access to files, directories, and system resources.</p>
+
+<table>
+<tr><th align="left">Term</th><th align="left">Meaning</th></tr>
+<tr><td>Root User</td><td>The superuser account, normally identified by UID 0.</td></tr>
+<tr><td>Regular User</td><td>An account for everyday work with limited privileges.</td></tr>
+<tr><td>Group</td><td>A collection of users who can share permissions.</td></tr>
+<tr><td>UID</td><td>User ID that identifies a user account.</td></tr>
+<tr><td>GID</td><td>Group ID that identifies a group.</td></tr>
+<tr><td><code>sudo</code></td><td>Runs permitted commands with elevated privileges.</td></tr>
+</table>
+
+<h3>💻 User Management Commands</h3>
+
+<pre><code>whoami                              # Show current username
+id                                  # Show UID, GID, and groups
+who                                 # Show logged-in users
+groups                              # Show your groups
+sudo useradd student                # Create a user
+sudo passwd student                 # Set or change password
+sudo groupadd developers            # Create a group
+sudo usermod -aG developers student # Add user to group
+sudo userdel student                # Delete a user account</code></pre>
+
+<p><strong>⚠️ Note:</strong> These commands may require root privileges. Check your distribution's options before deleting accounts or changing groups.</p>
+
+<hr>
+
+<!-- 🔐 14. Linux File Permissions -->
+<h2>🔐 14. Linux File Permissions</h2>
+
+<p>Permissions determine who can read, write, or execute a file. They are commonly assigned to the owner, group, and others.</p>
+
+<table>
+<tr><th align="left">Permission</th><th align="left">Symbol</th><th align="left">Numeric Value</th></tr>
+<tr><td>Read</td><td><code>r</code></td><td>4</td></tr>
+<tr><td>Write</td><td><code>w</code></td><td>2</td></tr>
+<tr><td>Execute</td><td><code>x</code></td><td>1</td></tr>
+</table>
+
+<h3>🧠 Understanding Permission Numbers</h3>
+
+<ul>
+<li><strong>7 = 4 + 2 + 1:</strong> Read, write, and execute.</li>
+<li><strong>6 = 4 + 2:</strong> Read and write.</li>
+<li><strong>5 = 4 + 1:</strong> Read and execute.</li>
+<li><strong>4:</strong> Read only.</li>
+</ul>
+
+<p>Example: <code>chmod 755 script.sh</code> gives the owner full permissions and gives the group and others read and execute permissions.</p>
+
+<h3>💻 Permission Commands</h3>
+
+<pre><code>ls -l                         # View permissions
+chmod 755 script.sh           # Change permissions
+chmod u+x script.sh           # Add execute permission for owner
+chmod 644 notes.txt           # Owner writes; others can read
+sudo chown student notes.txt  # Change file owner
+sudo chgrp developers notes.txt # Change group ownership</code></pre>
+
+<ul>
+<li><code>chmod</code> changes permissions.</li>
+<li><code>chown</code> changes ownership.</li>
+<li><code>chgrp</code> changes group ownership.</li>
+</ul>
+
+<hr>
+
+<!-- 🚀 15. Linux Boot Process -->
+<h2>🚀 15. Linux Boot Process</h2>
+
+<p>The boot process begins when the computer is powered on and continues until the operating system is ready to use.</p>
+
+<table>
 <tr>
-<th align="left">Symbol</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
+<td align="center" width="20%"><strong>01 · BIOS / UEFI</strong><br><br>Initializes hardware and selects a boot device.</td>
+<td align="center" width="20%"><strong>02 · Bootloader</strong><br><br>Loads the kernel and, where needed, the initial RAM filesystem.</td>
+<td align="center" width="20%"><strong>03 · Kernel</strong><br><br>Initializes hardware, memory, and core subsystems.</td>
+<td align="center" width="20%"><strong>04 · Init System</strong><br><br>Starts as PID 1; commonly systemd.</td>
+<td align="center" width="20%"><strong>05 · Services</strong><br><br>Starts configured services and reaches the target state.</td>
 </tr>
-<tr>
-<td><code>-</code></td>
-<td>Regular File</td>
-<td>Stores text, images, programs, and other data.</td>
-</tr>
-<tr>
-<td><code>d</code></td>
-<td>Directory</td>
-<td>Contains entries referring to files and directories.</td>
-</tr>
-<tr>
-<td><code>l</code></td>
-<td>Symbolic Link</td>
-<td>Points to another file or directory path.</td>
-</tr>
-<tr>
-<td><code>b</code></td>
-<td>Block Device</td>
-<td>Represents devices that support block-based I/O.</td>
-</tr>
-<tr>
-<td><code>c</code></td>
-<td>Character Device</td>
-<td>Represents devices that provide character-based I/O.</td>
-</tr>
-<tr>
-<td><code>p</code></td>
-<td>Named Pipe</td>
-<td>Allows processes to communicate through a FIFO.</td>
-</tr>
-<tr>
-<td><code>s</code></td>
-<td>Socket</td>
-<td>Enables communication between processes.</td>
-</tr>
-</table>🔍 Check File Types
+</table>
 
-ls -l               # View file-type symbols
-file notes.txt      # Identify a file's content type
-stat notes.txt      # Display file metadata
-ln -s notes.txt link.txt  # Create a symbolic link
+<p><strong>Boot sequence:</strong> BIOS/UEFI → Bootloader → Kernel → Init System → Services</p>
 
----
+<h3>🔍 Useful Boot Commands</h3>
 
-<h2>👥 13. Linux Users and Groups</h2><p>
-Linux uses users and groups to control access to files, directories, and system resources.
-</p><table>
-<tr>
-<th align="left">Term</th>
-<th align="left">Meaning</th>
-</tr>
-<tr>
-<td>Root User</td>
-<td>The superuser account, normally identified by UID 0.</td>
-</tr>
-<tr>
-<td>Regular User</td>
-<td>An account for everyday work with limited privileges.</td>
-</tr>
-<tr>
-<td>Group</td>
-<td>A collection of users that can share access permissions.</td>
-</tr>
-<tr>
-<td>UID</td>
-<td>User ID that identifies a user account.</td>
-</tr>
-<tr>
-<td>GID</td>
-<td>Group ID that identifies a group.</td>
-</tr>
-<tr>
-<td><code>sudo</code></td>
-<td>Runs permitted commands with elevated privileges.</td>
-</tr>
-</table>💻 User Management Commands
+<pre><code>systemctl status       # View system state
+systemctl get-default  # Show default systemd target
+systemd-analyze        # Analyze boot time
+journalctl -b          # View logs from current boot</code></pre>
 
-whoami                      # Show current username
-id                          # Show UID, GID, and groups
-who                         # Show logged-in users
-groups                      # Show your groups
-sudo useradd student        # Create a user
-sudo passwd student         # Set or change the user's password
-sudo groupadd developers    # Create a group
-sudo usermod -aG developers student  # Add user to group
-sudo userdel student        # Delete a user account
+<p><em>💡 Boot details vary by firmware, distribution, bootloader, and init system.</em></p>
 
-⚠️ User-management commands may require root privileges. Check your distribution's options before deleting accounts or modifying groups.
+<hr>
 
----
+<!-- 📦 16. Linux Package Management -->
+<h2>📦 16. Linux Package Management</h2>
 
-<h2>🔐 14. Linux File Permissions</h2><p>
-Linux permissions determine who can read, write, or execute a file. Permissions are commonly defined for the owner, group, and others.
-</p><table>
-<tr>
-<th align="left">Permission</th>
-<th align="left">Symbol</th>
-<th align="left">Numeric Value</th>
-</tr>
-<tr>
-<td>Read</td>
-<td><code>r</code></td>
-<td>4</td>
-</tr>
-<tr>
-<td>Write</td>
-<td><code>w</code></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Execute</td>
-<td><code>x</code></td>
-<td>1</td>
-</tr>
-</table>🧠 Understanding Permission Numbers
+<p>A package manager installs, updates, and removes software while helping manage dependencies.</p>
 
-- 7 = 4 + 2 + 1: Read, write, execute.
-- 6 = 4 + 2: Read and write.
-- 5 = 4 + 1: Read and execute.
-- 4 = 4: Read only.
+<table>
+<tr><th align="left">Tool</th><th align="left">Commonly Used On</th><th align="left">Purpose</th></tr>
+<tr><td>APT</td><td>Ubuntu, Debian</td><td>Manages packages, repositories, and dependencies.</td></tr>
+<tr><td>DPKG</td><td>Debian-based systems</td><td>Installs and manages local <code>.deb</code> packages.</td></tr>
+<tr><td>DNF</td><td>Fedora and related systems</td><td>Manages RPM packages and dependencies.</td></tr>
+<tr><td>RPM</td><td>Fedora, RHEL, and related systems</td><td>Works with <code>.rpm</code> packages.</td></tr>
+</table>
 
-For example, <code>chmod 755 script.sh</code> gives the owner full permissions and gives the group and others read and execute permissions.
+<h3>💻 APT Commands</h3>
 
-💻 Permission Commands
+<pre><code>sudo apt update         # Refresh package lists
+sudo apt upgrade        # Upgrade installed packages
+sudo apt install nginx  # Install a package
+sudo apt remove nginx   # Remove a package
+apt search nginx        # Search for packages
+dpkg -l                 # List installed packages</code></pre>
 
-ls -l                       # View permissions
-chmod 755 script.sh         # Change permissions
-chmod u+x script.sh         # Add execute permission for owner
-chmod 644 notes.txt         # Owner can write; others can read
-sudo chown student notes.txt # Change file owner
-sudo chgrp developers notes.txt # Change group ownership
+<h3>💻 DNF and RPM Commands</h3>
 
-Remember:
+<pre><code>sudo dnf check-update   # Check for available updates
+sudo dnf upgrade        # Upgrade installed packages
+sudo dnf install nginx  # Install a package
+sudo dnf remove nginx   # Remove a package
+rpm -qa                 # List installed RPM packages</code></pre>
 
-- <code>chmod</code> changes permissions.
-- <code>chown</code> changes ownership.
-- <code>chgrp</code> changes group ownership.
+<p><strong>⚠️ Note:</strong> Use the package manager appropriate for your Linux distribution.</p>
 
----
+<hr>
 
-<h2>🚀 15. Linux Boot Process</h2><p>
-The boot process starts when a computer is powered on and continues until the operating system is ready for use.
-</p><table>
-<tr>
-<td align="center" width="20%">01
+<!-- ⚙️ 17. Linux Process Management -->
+<h2>⚙️ 17. Linux Process Management</h2>
 
-BIOS / UEFI
+<p>A process is a running instance of a program. Linux assigns each process a Process ID (PID) and records its relationship with its parent process.</p>
 
-Initializes hardware and selects a boot device.
+<table>
+<tr><th align="left">Concept</th><th align="left">Meaning</th></tr>
+<tr><td>PID</td><td>Unique process identifier.</td></tr>
+<tr><td>PPID</td><td>Parent Process ID.</td></tr>
+<tr><td>Foreground Process</td><td>Runs interactively with the shell.</td></tr>
+<tr><td>Background Process</td><td>Runs without occupying the shell's foreground.</td></tr>
+<tr><td>Running</td><td>Executing or ready to execute.</td></tr>
+<tr><td>Sleeping</td><td>Waiting for an event or resource.</td></tr>
+<tr><td>Stopped</td><td>Suspended, for example by a job-control signal.</td></tr>
+<tr><td>Zombie</td><td>A terminated process whose exit status has not yet been collected by its parent.</td></tr>
+</table>
 
-</td>
-<td align="center" width="20%">02
+<h3>💻 Process Commands</h3>
 
-Bootloader
+<pre><code>ps                       # Show terminal-associated processes
+ps aux                   # Show detailed process information
+top                      # Monitor processes interactively
+pgrep firefox            # Find a process by name
+kill PID                 # Request process termination
+kill -9 PID              # Force termination as a last resort
+jobs                     # List shell jobs
+sleep 100 &amp;              # Start a background job
+fg                       # Bring a job to the foreground
+bg                       # Resume a stopped job in the background</code></pre>
 
-Loads the Linux kernel and, where needed, the initial RAM filesystem.
+<h3>📡 Common Signals</h3>
 
-</td>
-<td align="center" width="20%">03
+<ul>
+<li><strong>SIGTERM (15):</strong> Requests graceful termination.</li>
+<li><strong>SIGKILL (9):</strong> Forces termination; cannot be caught or ignored.</li>
+<li><strong>SIGSTOP:</strong> Stops a process.</li>
+<li><strong>SIGCONT:</strong> Resumes a stopped process.</li>
+</ul>
 
-Kernel
+<hr>
 
-Initializes hardware, memory, and core subsystems.
+<!-- 🌱 18. Environment Variables -->
+<h2>🌱 18. Environment Variables</h2>
 
-</td>
-<td align="center" width="20%">04
+<p>Environment variables store values that programs and shells use to determine settings and behavior.</p>
 
-Init System
+<table>
+<tr><th align="left">Variable</th><th align="left">Purpose</th></tr>
+<tr><td><code>PATH</code></td><td>Directories searched for executable commands.</td></tr>
+<tr><td><code>HOME</code></td><td>Current user's home directory.</td></tr>
+<tr><td><code>USER</code></td><td>Commonly identifies the current username.</td></tr>
+<tr><td><code>SHELL</code></td><td>Typically identifies the configured login shell.</td></tr>
+<tr><td><code>PWD</code></td><td>Current working directory in the shell environment.</td></tr>
+<tr><td><code>LANG</code></td><td>Controls the default locale for many programs.</td></tr>
+</table>
 
-Starts as PID 1; commonly systemd.
+<h3>💻 Environment Variable Commands</h3>
 
-</td>
-<td align="center" width="20%">05
+<pre><code>echo "$HOME"               # Display home directory
+echo "$USER"               # Display username
+echo "$SHELL"              # Display configured shell
+echo "$PATH"               # Display command search paths
+printenv                   # Display environment variables
+export APP_ENV=development # Set a variable for child processes
+unset APP_ENV              # Remove the variable</code></pre>
 
-Services
+<p>💡 Use <code>$VARIABLE_NAME</code> to access a variable's value in the shell.</p>
 
-Starts configured services and brings the system to its target state.
+<hr>
 
-</td>
-</tr>
-</table>🔍 Useful Boot Commands
+<!-- 🌐 19. Linux Networking Basics -->
+<h2>🌐 19. Linux Networking Basics</h2>
 
-systemctl status          # View system state
-systemctl get-default     # Show default systemd target
-systemd-analyze           # Analyze boot time
-journalctl -b             # View logs from current boot
+<p>Linux networking tools help inspect interfaces, IP addresses, routing, DNS, remote access, and active connections.</p>
 
-💡 Boot details vary depending on firmware, distribution, bootloader, and init system.
+<table>
+<tr><th align="left">Concept</th><th align="left">Meaning</th></tr>
+<tr><td>IP Address</td><td>Identifies a network interface using IPv4 or IPv6.</td></tr>
+<tr><td>DNS</td><td>Resolves domain names to IP addresses and other DNS records.</td></tr>
+<tr><td>SSH</td><td>Provides encrypted remote login and command execution.</td></tr>
+<tr><td>Port</td><td>Identifies a communication endpoint used by network services.</td></tr>
+<tr><td>Network Interface</td><td>A connection point such as Ethernet, Wi-Fi, or loopback.</td></tr>
+<tr><td>Gateway</td><td>A router used to reach networks outside the local network.</td></tr>
+</table>
 
----
+<h3>💻 Networking Commands</h3>
 
-<h2>📦 16. Linux Package Management</h2><p>
-A package manager installs, updates, and removes software while helping manage dependencies.
-</p><table>
-<tr>
-<th align="left">Tool</th>
-<th align="left">Commonly Used On</th>
-<th align="left">Purpose</th>
-</tr>
-<tr>
-<td>APT</td>
-<td>Ubuntu, Debian</td>
-<td>Manages packages using repositories and dependencies.</td>
-</tr>
-<tr>
-<td>DPKG</td>
-<td>Debian-based systems</td>
-<td>Installs and manages local .deb packages.</td>
-</tr>
-<tr>
-<td>DNF</td>
-<td>Fedora and related systems</td>
-<td>Manages RPM packages and dependencies.</td>
-</tr>
-<tr>
-<td>RPM</td>
-<td>Fedora, RHEL, and related systems</td>
-<td>Works with .rpm packages.</td>
-</tr>
-</table>💻 APT Commands
-
-sudo apt update              # Refresh package lists
-sudo apt upgrade             # Upgrade installed packages
-sudo apt install nginx       # Install a package
-sudo apt remove nginx        # Remove a package
-apt search nginx             # Search for packages
-dpkg -l                      # List installed packages
-
-💻 DNF and RPM Commands
-
-sudo dnf check-update        # Check for available updates
-sudo dnf upgrade             # Upgrade installed packages
-sudo dnf install nginx       # Install a package
-sudo dnf remove nginx        # Remove a package
-rpm -qa                      # List installed RPM packages
-
-⚠️ Use the package manager appropriate for your distribution.
-
----
-
-<h2>⚙️ 17. Linux Process Management</h2><p>
-A process is a running instance of a program. Linux assigns each process a Process ID (PID) and records its relationship with its parent process.
-</p><table>
-<tr>
-<th align="left">Concept</th>
-<th align="left">Meaning</th>
-</tr>
-<tr>
-<td>PID</td>
-<td>Unique process identifier.</td>
-</tr>
-<tr>
-<td>PPID</td>
-<td>Parent Process ID.</td>
-</tr>
-<tr>
-<td>Foreground Process</td>
-<td>Runs interactively with the shell.</td>
-</tr>
-<tr>
-<td>Background Process</td>
-<td>Runs without occupying the shell's foreground.</td>
-</tr>
-<tr>
-<td>Running</td>
-<td>Executing or ready to execute.</td>
-</tr>
-<tr>
-<td>Sleeping</td>
-<td>Waiting for an event or resource.</td>
-</tr>
-<tr>
-<td>Stopped</td>
-<td>Suspended, for example by a job-control signal.</td>
-</tr>
-<tr>
-<td>Zombie</td>
-<td>A terminated process whose exit status has not yet been collected by its parent.</td>
-</tr>
-</table>💻 Process Commands
-
-ps                         # Show processes associated with the terminal
-ps aux                     # Show detailed process information
-top                        # Monitor processes interactively
-pgrep firefox              # Find a process by name
-kill PID                   # Send the default termination signal
-kill -9 PID                # Force termination as a last resort
-jobs                       # List shell jobs
-sleep 100 &                # Start a background job
-fg                         # Bring a job to the foreground
-bg                         # Resume a stopped job in the background
-
-📡 Common Signals
-
-- SIGTERM (15): Requests graceful termination.
-- SIGKILL (9): Forces termination; the process cannot catch or ignore it.
-- SIGSTOP: Stops a process.
-- SIGCONT: Resumes a stopped process.
-
----
-
-<h2>🌱 18. Environment Variables</h2><p>
-Environment variables store values that programs and shells can use to determine settings and behavior.
-</p><table>
-<tr>
-<th align="left">Variable</th>
-<th align="left">Purpose</th>
-</tr>
-<tr>
-<td><code>PATH</code></td>
-<td>Directories searched for executable commands.</td>
-</tr>
-<tr>
-<td><code>HOME</code></td>
-<td>Current user's home directory.</td>
-</tr>
-<tr>
-<td><code>USER</code></td>
-<td>Commonly identifies the current username.</td>
-</tr>
-<tr>
-<td><code>SHELL</code></td>
-<td>Typically identifies the user's configured login shell.</td>
-</tr>
-<tr>
-<td><code>PWD</code></td>
-<td>Current working directory in the shell environment.</td>
-</tr>
-<tr>
-<td><code>LANG</code></td>
-<td>Controls the default locale for many programs.</td>
-</tr>
-</table>💻 Environment Variable Commands
-
-echo "$HOME"                    # Display home directory
-echo "$USER"                    # Display username
-echo "$SHELL"                   # Display configured shell
-echo "$PATH"                    # Display command search paths
-printenv                        # Display environment variables
-export APP_ENV=development      # Set a variable for child processes
-unset APP_ENV                   # Remove an exported variable
-
-💡 Use <code>$VARIABLE_NAME</code> to access a variable's value in the shell.
-
----
-
-<h2>🌐 19. Linux Networking Basics</h2><p>
-Linux networking tools help inspect network interfaces, IP addresses, routing, DNS, remote access, and active connections.
-</p><table>
-<tr>
-<th align="left">Concept</th>
-<th align="left">Meaning</th>
-</tr>
-<tr>
-<td>IP Address</td>
-<td>Identifies a network interface using IPv4 or IPv6.</td>
-</tr>
-<tr>
-<td>DNS</td>
-<td>Resolves domain names to IP addresses and other DNS records.</td>
-</tr>
-<tr>
-<td>SSH</td>
-<td>Provides encrypted remote login and command execution.</td>
-</tr>
-<tr>
-<td>Port</td>
-<td>Identifies a communication endpoint used by network services.</td>
-</tr>
-<tr>
-<td>Network Interface</td>
-<td>A connection point such as Ethernet, Wi-Fi, or loopback.</td>
-</tr>
-<tr>
-<td>Gateway</td>
-<td>A router used to reach networks outside the local network.</td>
-</tr>
-</table>💻 Networking Commands
-
-ip addr                         # Show network interfaces and IP addresses
+<pre><code>ip addr                         # Show interfaces and IP addresses
 ip route                        # Display routing table
 ping example.com                # Test network reachability
 getent hosts example.com        # Look up host information
 ssh user@192.168.1.10           # Connect to a remote machine
 ss -tuln                        # Show listening TCP/UDP sockets
-curl -I https://example.com     # Inspect HTTP response headers
+curl -I https://example.com     # Inspect HTTP response headers</code></pre>
 
-💡 Some systems may require installing additional networking tools.
+<p><em>💡 Some systems may require installing additional networking tools.</em></p>
 
----
+<hr>
 
-<h2>🔧 20. Linux Services and Daemons</h2><p>
-A service is a system function managed by the operating system. A daemon is a background process that commonly provides a service without direct interactive input.
-</p><p>
-Many modern Linux distributions use <code>systemd</code> to manage services through the <code>systemctl</code> command.
-</p>💻 Service Management
+<!-- 🔧 20. Linux Services and Daemons -->
+<h2>🔧 20. Linux Services and Daemons</h2>
 
-systemctl status ssh           # Check SSH service status
-sudo systemctl start ssh       # Start a service
-sudo systemctl stop ssh        # Stop a service
-sudo systemctl restart ssh     # Restart a service
-sudo systemctl enable ssh      # Enable startup at boot
-sudo systemctl disable ssh     # Disable startup at boot
+<p>A service is a system function managed by the operating system. A daemon is a background process that commonly provides a service without direct interactive input.</p>
+
+<p>Many modern Linux distributions use <code>systemd</code> to manage services through <code>systemctl</code>.</p>
+
+<h3>💻 Service Management Commands</h3>
+
+<pre><code>systemctl status ssh                 # Check service status
+sudo systemctl start ssh             # Start a service
+sudo systemctl stop ssh              # Stop a service
+sudo systemctl restart ssh           # Restart a service
+sudo systemctl enable ssh            # Enable startup at boot
+sudo systemctl disable ssh           # Disable startup at boot
 systemctl list-units --type=service  # List loaded services
-journalctl -u ssh              # View service logs
+journalctl -u ssh                    # View service logs</code></pre>
 
-⚠️ Service names differ between distributions. For example, an SSH server service may be named <code>ssh</code> or <code>sshd</code>.
+<p><strong>⚠️ Note:</strong> Service names vary by distribution. An SSH server may use the name <code>ssh</code> or <code>sshd</code>.</p>
 
----
+<hr>
 
-<h2>💽 21. Linux File System Types</h2><p>
-A filesystem defines how data is organized, stored, and retrieved on a storage device.
-</p><table>
-<tr>
-<th align="left">Filesystem</th>
-<th align="left">Typical Use</th>
-<th align="left">Key Point</th>
-</tr>
-<tr>
-<td>ext4</td>
-<td>Linux installations</td>
-<td>Widely used general-purpose Linux filesystem.</td>
-</tr>
-<tr>
-<td>XFS</td>
-<td>Linux servers</td>
-<td>Designed for scalable, high-performance filesystems.</td>
-</tr>
-<tr>
-<td>Btrfs</td>
-<td>Linux desktops and servers</td>
-<td>Supports features such as snapshots and checksums.</td>
-</tr>
-<tr>
-<td>FAT32</td>
-<td>USB drives and removable media</td>
-<td>Broad compatibility; individual files cannot exceed 4 GiB.</td>
-</tr>
-<tr>
-<td>NTFS</td>
-<td>Windows systems and shared storage</td>
-<td>Windows' modern default filesystem.</td>
-</tr>
-<tr>
-<td>exFAT</td>
-<td>Flash drives and external storage</td>
-<td>Supports large files and is widely compatible.</td>
-</tr>
-</table>💻 Filesystem Commands
+<!-- 💽 21. Linux File System Types -->
+<h2>💽 21. Linux File System Types</h2>
 
-df -h                  # Show filesystem space usage
-du -sh ~/Documents     # Show directory size
-lsblk                  # List block devices
-findmnt                # Display mounted filesystems
-mount                  # Show or manage mounts
+<p>A filesystem defines how data is organized, stored, and retrieved on a storage device.</p>
 
-⚠️ Formatting a device can permanently erase data. Verify the target device before performing any disk operation.
+<table>
+<tr><th align="left">Filesystem</th><th align="left">Typical Use</th><th align="left">Key Point</th></tr>
+<tr><td>ext4</td><td>Linux installations</td><td>Widely used general-purpose Linux filesystem.</td></tr>
+<tr><td>XFS</td><td>Linux servers</td><td>Designed for scalable, high-performance filesystems.</td></tr>
+<tr><td>Btrfs</td><td>Linux desktops and servers</td><td>Supports snapshots and checksums.</td></tr>
+<tr><td>FAT32</td><td>USB drives and removable media</td><td>Broad compatibility; individual files cannot exceed 4 GiB.</td></tr>
+<tr><td>NTFS</td><td>Windows systems and shared storage</td><td>Windows' modern default filesystem.</td></tr>
+<tr><td>exFAT</td><td>Flash drives and external storage</td><td>Supports large files and is widely compatible.</td></tr>
+</table>
 
----
+<h3>💻 Filesystem Commands</h3>
 
-<h2>🔀 22. Standard Input, Output & Redirection</h2><p>
-Linux commands use standard input, standard output, and standard error to receive data and produce results.
-</p><table>
-<tr>
-<th align="left">Stream</th>
-<th align="left">File Descriptor</th>
-<th align="left">Purpose</th>
-</tr>
-<tr>
-<td>stdin</td>
-<td>0</td>
-<td>Standard input.</td>
-</tr>
-<tr>
-<td>stdout</td>
-<td>1</td>
-<td>Standard output.</td>
-</tr>
-<tr>
-<td>stderr</td>
-<td>2</td>
-<td>Standard error output.</td>
-</tr>
-</table>💻 Pipes and Redirection
+<pre><code>df -h              # Show filesystem space usage
+du -sh ~/Documents # Show directory size
+lsblk              # List block devices
+findmnt            # Display mounted filesystems
+mount              # Show or manage mounts</code></pre>
 
-ls > files.txt                 # Write output; replace existing contents
-ls >> files.txt                # Append output to a file
-sort < names.txt               # Read input from a file
-ls missing.txt 2> error.txt    # Redirect error output
-command > output.txt 2>&1      # Redirect stdout and stderr to one file
-cat names.txt | sort           # Send one command's output to another
-grep "error" app.log | wc -l   # Count matching lines
+<p><strong>⚠️ Warning:</strong> Formatting a device can permanently erase data. Always verify the target device before performing disk operations.</p>
 
-🧠 Remember These Operators
+<hr>
 
-- ">" overwrites a file with redirected output.
-- ">>" appends output to a file.
-- "<" takes input from a file.
-- "|" sends one command's output to another command.
-- "2>" redirects standard error.
+<!-- 🔀 22. Standard Input, Output and Redirection -->
+<h2>🔀 22. Standard Input, Output &amp; Redirection</h2>
 
----
+<p>Linux commands use standard input, standard output, and standard error to receive data and produce results.</p>
 
-<h2>⌨️ 23. Linux Command Structure</h2><p>
-A Linux command usually consists of a command name followed by options and arguments.
-</p>🧩 General Syntax
+<table>
+<tr><th align="left">Stream</th><th align="left">File Descriptor</th><th align="left">Purpose</th></tr>
+<tr><td>stdin</td><td>0</td><td>Standard input.</td></tr>
+<tr><td>stdout</td><td>1</td><td>Standard output.</td></tr>
+<tr><td>stderr</td><td>2</td><td>Standard error output.</td></tr>
+</table>
 
-command [options] [arguments]
+<h3>💻 Pipes and Redirection</h3>
 
-🔍 Example
+<pre><code>ls &gt; files.txt                  # Write output; overwrite existing contents
+ls &gt;&gt; files.txt                 # Append output to a file
+sort &lt; names.txt                # Read input from a file
+ls missing.txt 2&gt; error.txt     # Redirect error output
+command &gt; output.txt 2&gt;&amp;1      # Redirect stdout and stderr to one file
+cat names.txt | sort            # Send output to another command
+grep "error" app.log | wc -l    # Count matching lines</code></pre>
 
-ls -l /home/student
+<h3>🧠 Remember These Operators</h3>
 
-- Command: "ls"
-- Option: "-l"
-- Argument: "/home/student"
-- Purpose: Lists the contents of the specified directory in long format.
+<ul>
+<li><code>&gt;</code> Overwrites a file with redirected output.</li>
+<li><code>&gt;&gt;</code> Appends output to a file.</li>
+<li><code>&lt;</code> Takes input from a file.</li>
+<li><code>|</code> Sends one command's output to another command.</li>
+<li><code>2&gt;</code> Redirects standard error.</li>
+</ul>
 
-💻 More Examples
+<hr>
 
-pwd                       # Print working directory
+<!-- ⌨️ 23. Linux Command Structure -->
+<h2>⌨️ 23. Linux Command Structure</h2>
+
+<p>A Linux command usually consists of a command name followed by options and arguments.</p>
+
+<h3>🧩 General Syntax</h3>
+
+<pre><code>command [options] [arguments]</code></pre>
+
+<h3>🔍 Example</h3>
+
+<pre><code>ls -l /home/student</code></pre>
+
+<ul>
+<li><strong>Command:</strong> <code>ls</code></li>
+<li><strong>Option:</strong> <code>-l</code></li>
+<li><strong>Argument:</strong> <code>/home/student</code></li>
+<li><strong>Purpose:</strong> Lists the specified directory in long format.</li>
+</ul>
+
+<h3>💻 More Examples</h3>
+
+<pre><code>pwd                       # Print working directory
 ls -a                     # Show hidden entries
 mkdir -p projects/linux   # Create nested directories
 cp notes.txt backup.txt   # Copy a file
 mv old.txt new.txt        # Rename or move a file
-rm unwanted.txt           # Remove a file
+rm unwanted.txt           # Remove a file</code></pre>
 
-🚦 Exit Status
+<h3>🚦 Exit Status</h3>
 
-The exit status indicates whether a command succeeded.
+<p>The exit status indicates whether a command succeeded. Zero usually means success; a non-zero value indicates failure.</p>
 
-ls
-echo $?                   # 0 usually means success; non-zero indicates failure
+<pre><code>ls
+echo $?                   # Display the previous command's exit status</code></pre>
 
----
+<hr>
 
-<h2>🧭 24. Absolute vs Relative Paths</h2><p>
-A path identifies the location of a file or directory in the filesystem.
-</p><table>
-<tr>
-<th align="left">Path Type</th>
-<th align="left">Example</th>
-<th align="left">Explanation</th>
-</tr>
-<tr>
-<td>Absolute Path</td>
-<td><code>/home/student/notes.txt</code></td>
-<td>Starts from the filesystem root <code>/</code>.</td>
-</tr>
-<tr>
-<td>Relative Path</td>
-<td><code>documents/notes.txt</code></td>
-<td>Resolved relative to the current working directory.</td>
-</tr>
-<tr>
-<td>Current Directory</td>
-<td><code>.</code></td>
-<td>Represents the current directory.</td>
-</tr>
-<tr>
-<td>Parent Directory</td>
-<td><code>..</code></td>
-<td>Represents the parent directory.</td>
-</tr>
-<tr>
-<td>Home Directory</td>
-<td><code>~</code></td>
-<td>Shell shortcut for the current user's home directory.</td>
-</tr>
-</table>💻 Path Practice
+<!-- 🧭 24. Absolute vs Relative Paths -->
+<h2>🧭 24. Absolute vs Relative Paths</h2>
 
-pwd
+<p>A path identifies the location of a file or directory in the filesystem.</p>
+
+<table>
+<tr><th align="left">Path Type</th><th align="left">Example</th><th align="left">Explanation</th></tr>
+<tr><td>Absolute Path</td><td><code>/home/student/notes.txt</code></td><td>Starts from the filesystem root <code>/</code>.</td></tr>
+<tr><td>Relative Path</td><td><code>documents/notes.txt</code></td><td>Resolved relative to the current working directory.</td></tr>
+<tr><td>Current Directory</td><td><code>.</code></td><td>Represents the current directory.</td></tr>
+<tr><td>Parent Directory</td><td><code>..</code></td><td>Represents the parent directory.</td></tr>
+<tr><td>Home Directory</td><td><code>~</code></td><td>Shell shortcut for the current user's home directory.</td></tr>
+</table>
+
+<h3>💻 Path Practice</h3>
+
+<pre><code>pwd
 cd /home/student
 cd documents
 cd ..
 cd ~/Downloads
-cat /home/student/notes.txt
+cat /home/student/notes.txt</code></pre>
 
-💡 Absolute paths begin at "/"; relative paths depend on your current directory.
+<p>💡 Absolute paths begin at <code>/</code>; relative paths depend on the current directory.</p>
 
----
+<hr>
 
-<h2>📝 25. Linux Text Editors</h2><p>
-Text editors let you create and modify configuration files, scripts, source code, and documentation directly in the terminal.
-</p><table>
-<tr>
-<th align="left">Editor</th>
-<th align="left">Description</th>
-</tr>
-<tr>
-<td>Nano</td>
-<td>Beginner-friendly terminal editor with visible shortcuts.</td>
-</tr>
-<tr>
-<td>Vim</td>
-<td>Powerful modal editor with extensive editing capabilities.</td>
-</tr>
-<tr>
-<td>Vi</td>
-<td>Traditional Unix text editor available on many systems.</td>
-</tr>
-<tr>
-<td>Emacs</td>
-<td>Extensible editor with many additional features.</td>
-</tr>
-</table>💻 Open and Edit Files
+<!-- 📝 25. Linux Text Editors -->
+<h2>📝 25. Linux Text Editors</h2>
 
-nano notes.txt          # Open a file in Nano
+<p>Text editors let you create and modify configuration files, scripts, source code, and documentation directly in the terminal.</p>
+
+<table>
+<tr><th align="left">Editor</th><th align="left">Description</th></tr>
+<tr><td>Nano</td><td>Beginner-friendly terminal editor with visible shortcuts.</td></tr>
+<tr><td>Vim</td><td>Powerful modal editor with extensive editing capabilities.</td></tr>
+<tr><td>Vi</td><td>Traditional Unix text editor available on many systems.</td></tr>
+<tr><td>Emacs</td><td>Extensible editor with many additional features.</td></tr>
+</table>
+
+<h3>💻 Open and Edit Files</h3>
+
+<pre><code>nano notes.txt          # Open a file in Nano
 vim notes.txt           # Open a file in Vim
 cat notes.txt           # Display file contents
-less /var/log/syslog    # Read a file page by page
+less /var/log/syslog    # Read a file page by page</code></pre>
 
-⌨️ Nano Shortcuts
+<h3>⌨️ Nano Shortcuts</h3>
 
-- Ctrl + O: Save the file.
-- Enter: Confirm the filename.
-- Ctrl + X: Exit Nano.
-- Ctrl + W: Search within the file.
-- Ctrl + K: Cut a line.
+<ul>
+<li><strong>Ctrl + O:</strong> Save the file.</li>
+<li><strong>Enter:</strong> Confirm the filename.</li>
+<li><strong>Ctrl + X:</strong> Exit Nano.</li>
+<li><strong>Ctrl + W:</strong> Search within the file.</li>
+<li><strong>Ctrl + K:</strong> Cut a line.</li>
+</ul>
 
-⌨️ Vim Basics
+<h3>⌨️ Vim Basics</h3>
 
-- Press i to enter insert mode.
-- Press Esc to return to normal mode.
-- Type ":w" to save.
-- Type ":q" to quit.
-- Type ":wq" to save and quit.
-- Type ":q!" to quit without saving changes.
+<ul>
+<li>Press <code>i</code> to enter insert mode.</li>
+<li>Press <code>Esc</code> to return to normal mode.</li>
+<li>Type <code>:w</code> to save.</li>
+<li>Type <code>:q</code> to quit.</li>
+<li>Type <code>:wq</code> to save and quit.</li>
+<li>Type <code>:q!</code> to quit without saving changes.</li>
+</ul>
 
----
+<hr>
 
-<h2>📜 26. Shell Scripting Basics</h2><p>
-A shell script is a text file containing commands that a shell executes in sequence. Scripts automate repetitive tasks and combine commands, variables, conditions, loops, and functions.
-</p>💻 Your First Shell Script
+<!-- 📜 26. Shell Scripting Basics -->
+<h2>📜 26. Shell Scripting Basics</h2>
 
-Create a file named "hello.sh":
+<p>A shell script is a text file containing commands executed by a shell. Scripts automate repetitive tasks using variables, conditions, loops, and functions.</p>
 
-#!/usr/bin/env bash
+<h3>💻 Your First Shell Script</h3>
+
+<p>Create a file named <code>hello.sh</code> with the following content:</p>
+
+<pre><code>#!/usr/bin/env bash
 
 name="Student"
 
 echo "Hello, $name!"
-echo "Welcome to Linux."
+echo "Welcome to Linux."</code></pre>
 
-Run it:
+<p>Run the script:</p>
 
-chmod +x hello.sh
-./hello.sh
+<pre><code>chmod +x hello.sh
+./hello.sh</code></pre>
 
-🔀 Conditions
+<h3>🔀 Conditions</h3>
 
-#!/usr/bin/env bash
+<pre><code>#!/usr/bin/env bash
 
 number=10
 
@@ -1190,218 +1002,134 @@ if [ "$number" -gt 5 ]; then
     echo "Number is greater than 5"
 else
     echo "Number is 5 or less"
-fi
+fi</code></pre>
 
-🔁 Loops
+<h3>🔁 Loops</h3>
 
-#!/usr/bin/env bash
+<pre><code>#!/usr/bin/env bash
 
 for i in 1 2 3 4 5; do
     echo "Number: $i"
-done
+done</code></pre>
 
-🧩 Functions
+<h3>🧩 Functions</h3>
 
-#!/usr/bin/env bash
+<pre><code>#!/usr/bin/env bash
 
 greet() {
     echo "Hello, Linux learner!"
 }
 
-greet
+greet</code></pre>
 
-📌 Core Concepts
+<h3>📌 Core Concepts</h3>
 
-- Variables: Store values.
-- Conditions: Make decisions.
-- Loops: Repeat commands.
-- Functions: Organize reusable commands.
-- Shebang: Identifies the interpreter used to run a script.
-- Exit Status: Indicates success or failure.
+<ul>
+<li><strong>Variables:</strong> Store values.</li>
+<li><strong>Conditions:</strong> Make decisions.</li>
+<li><strong>Loops:</strong> Repeat commands.</li>
+<li><strong>Functions:</strong> Organize reusable commands.</li>
+<li><strong>Shebang:</strong> Identifies the interpreter used to run a script.</li>
+<li><strong>Exit Status:</strong> Indicates success or failure.</li>
+</ul>
 
----
+<hr>
 
-<h2>🔍 27. Linux Advantages and Limitations</h2><table>
+<!-- 🔍 27. Linux Advantages and Limitations -->
+<h2>🔍 27. Linux Advantages and Limitations</h2>
+
+<table>
+<tr><th width="50%" align="left">✅ Advantages</th><th width="50%" align="left">⚠️ Limitations</th></tr>
 <tr>
-<th width="50%" align="left">✅ Advantages</th>
-<th width="50%" align="left">⚠️ Limitations</th>
-</tr>
-<tr>
-<td valign="top">- Open-source ecosystem.
-- Strong permission and security mechanisms.
-- Stable and reliable for many workloads.
-- Highly customizable.
-- Efficient on a wide range of hardware.
-- Powerful command-line tools.
-- Excellent support for programming, servers, and automation.
-- Many distributions are available without a purchase fee.
+<td valign="top">
 
-</td>
-<td valign="top">- Some commercial applications are unavailable or have limited support.
-- Certain games and hardware may need extra configuration.
-- Beginners may face a learning curve.
-- Troubleshooting sometimes requires command-line knowledge.
-- Software availability varies by distribution.
-- Some professional applications work best on Windows or macOS.
+<ul>
+<li>Open-source ecosystem.</li>
+<li>Strong permission and security mechanisms.</li>
+<li>Stable and reliable for many workloads.</li>
+<li>Highly customizable.</li>
+<li>Efficient on a wide range of hardware.</li>
+<li>Powerful command-line tools.</li>
+<li>Excellent support for programming, servers, and automation.</li>
+<li>Many distributions are available without a purchase fee.</li>
+</ul>
 
 </td>
-</tr>
-</table><p>
-💡 Linux is especially valuable for programming, system administration, cybersecurity education, cloud computing, and automation, but the best operating system depends on your requirements.
-</p>---
+<td valign="top">
 
-<h2>🛠️ 28. Essential Linux Commands Cheat Sheet</h2><table>
-<tr>
-<th align="left">Task</th>
-<th align="left">Command</th>
-</tr>
-<tr>
-<td>Show current directory</td>
-<td><code>pwd</code></td>
-</tr>
-<tr>
-<td>List files</td>
-<td><code>ls -la</code></td>
-</tr>
-<tr>
-<td>Change directory</td>
-<td><code>cd directory</code></td>
-</tr>
-<tr>
-<td>Create directory</td>
-<td><code>mkdir projects</code></td>
-</tr>
-<tr>
-<td>Create empty file</td>
-<td><code>touch notes.txt</code></td>
-</tr>
-<tr>
-<td>Copy file</td>
-<td><code>cp source.txt copy.txt</code></td>
-</tr>
-<tr>
-<td>Move or rename file</td>
-<td><code>mv old.txt new.txt</code></td>
-</tr>
-<tr>
-<td>Remove file</td>
-<td><code>rm file.txt</code></td>
-</tr>
-<tr>
-<td>Display file contents</td>
-<td><code>cat file.txt</code></td>
-</tr>
-<tr>
-<td>Search file contents</td>
-<td><code>grep "word" file.txt</code></td>
-</tr>
-<tr>
-<td>Find files</td>
-<td><code>find . -name "*.txt"</code></td>
-</tr>
-<tr>
-<td>Display disk space</td>
-<td><code>df -h</code></td>
-</tr>
-<tr>
-<td>Display memory usage</td>
-<td><code>free -h</code></td>
-</tr>
-<tr>
-<td>Show running processes</td>
-<td><code>ps aux</code></td>
-</tr>
-<tr>
-<td>Show network addresses</td>
-<td><code>ip addr</code></td>
-</tr>
-<tr>
-<td>Show command manual</td>
-<td><code>man ls</code></td>
-</tr>
-<tr>
-<td>Clear terminal screen</td>
-<td><code>clear</code></td>
-</tr>
-</table>⚠️ Use destructive commands such as "rm", "chmod", "chown", and disk-formatting tools carefully. Never run unfamiliar commands with elevated privileges without understanding their effects.
+<ul>
+<li>Some commercial applications are unavailable or have limited support.</li>
+<li>Certain games and hardware may need extra configuration.</li>
+<li>Beginners may face a learning curve.</li>
+<li>Troubleshooting sometimes requires command-line knowledge.</li>
+<li>Software availability varies by distribution.</li>
+<li>Some professional applications work best on Windows or macOS.</li>
+</ul>
 
----
+</td>
+</tr>
+</table>
 
-<h2>📚 Quick Revision</h2><table>
-<tr>
-<th align="left">Concept</th>
-<th align="left">Meaning</th>
-</tr>
-<tr>
-<td>Linux</td>
-<td>An operating system ecosystem built around the Linux kernel.</td>
-</tr>
-<tr>
-<td>Kernel</td>
-<td>Manages hardware resources and essential system operations.</td>
-</tr>
-<tr>
-<td>Shell</td>
-<td>Interprets commands and launches programs.</td>
-</tr>
-<tr>
-<td>Terminal</td>
-<td>A text-based interface for interacting with a shell.</td>
-</tr>
-<tr>
-<td>Distribution</td>
-<td>A complete operating system built around the Linux kernel and supporting software.</td>
-</tr>
-<tr>
-<td>GNU</td>
-<td>A free-software project that provides many utilities used with Linux.</td>
-</tr>
-<tr>
-<td>Root</td>
-<td>The superuser account with extensive system privileges.</td>
-</tr>
-<tr>
-<td>Filesystem</td>
-<td>Organizes and manages how files and directories are stored.</td>
-</tr>
-<tr>
-<td>chmod</td>
-<td>Changes file permissions.</td>
-</tr>
-<tr>
-<td>chown</td>
-<td>Changes file ownership.</td>
-</tr>
-<tr>
-<td>PID</td>
-<td>Identifies a process.</td>
-</tr>
-<tr>
-<td>PATH</td>
-<td>Lists directories searched for executable commands.</td>
-</tr>
-<tr>
-<td>systemctl</td>
-<td>Controls and inspects systemd-managed services and units.</td>
-</tr>
-<tr>
-<td>APT / DNF</td>
-<td>Package management tools used by different Linux distributions.</td>
-</tr>
-<tr>
-<td>SSH</td>
-<td>Provides encrypted remote access.</td>
-</tr>
-<tr>
-<td>Pipe (<code>|</code>)</td>
-<td>Connects one command's output to another command's input.</td>
-</tr>
-</table>---
+<p>💡 Linux is valuable for programming, system administration, cybersecurity education, cloud computing, and automation. The best operating system depends on your requirements.</p>
+
+<hr>
+
+<!-- 🛠️ 28. Essential Linux Commands Cheat Sheet -->
+<h2>🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
+
+<table>
+<tr><th align="left">Task</th><th align="left">Command</th></tr>
+<tr><td>Show current directory</td><td><code>pwd</code></td></tr>
+<tr><td>List files</td><td><code>ls -la</code></td></tr>
+<tr><td>Change directory</td><td><code>cd directory</code></td></tr>
+<tr><td>Create directory</td><td><code>mkdir projects</code></td></tr>
+<tr><td>Create empty file</td><td><code>touch notes.txt</code></td></tr>
+<tr><td>Copy file</td><td><code>cp source.txt copy.txt</code></td></tr>
+<tr><td>Move or rename file</td><td><code>mv old.txt new.txt</code></td></tr>
+<tr><td>Remove file</td><td><code>rm file.txt</code></td></tr>
+<tr><td>Display file contents</td><td><code>cat file.txt</code></td></tr>
+<tr><td>Search file contents</td><td><code>grep "word" file.txt</code></td></tr>
+<tr><td>Find files</td><td><code>find . -name "*.txt"</code></td></tr>
+<tr><td>Display disk space</td><td><code>df -h</code></td></tr>
+<tr><td>Display memory usage</td><td><code>free -h</code></td></tr>
+<tr><td>Show running processes</td><td><code>ps aux</code></td></tr>
+<tr><td>Show network addresses</td><td><code>ip addr</code></td></tr>
+<tr><td>Show command manual</td><td><code>man ls</code></td></tr>
+<tr><td>Clear terminal screen</td><td><code>clear</code></td></tr>
+</table>
+
+<p><strong>⚠️ Safety:</strong> Use destructive commands such as <code>rm</code>, <code>chmod</code>, <code>chown</code>, and disk-formatting tools carefully. Never run unfamiliar commands with elevated privileges without understanding their effects.</p>
+
+<hr>
+
+<!-- 📚 Quick Revision -->
+<h2>📚 Quick Revision</h2>
+
+<table>
+<tr><th align="left">Concept</th><th align="left">Meaning</th></tr>
+<tr><td>Linux</td><td>An operating system ecosystem built around the Linux kernel.</td></tr>
+<tr><td>Kernel</td><td>Manages hardware resources and essential system operations.</td></tr>
+<tr><td>Shell</td><td>Interprets commands and launches programs.</td></tr>
+<tr><td>Terminal</td><td>A text-based interface for interacting with a shell.</td></tr>
+<tr><td>Distribution</td><td>A complete operating system built around the Linux kernel and supporting software.</td></tr>
+<tr><td>GNU</td><td>A free-software project that provides many utilities used with Linux.</td></tr>
+<tr><td>Root</td><td>The superuser account with extensive system privileges.</td></tr>
+<tr><td>Filesystem</td><td>Organizes and manages how files and directories are stored.</td></tr>
+<tr><td>chmod</td><td>Changes file permissions.</td></tr>
+<tr><td>chown</td><td>Changes file ownership.</td></tr>
+<tr><td>PID</td><td>Identifies a process.</td></tr>
+<tr><td>PATH</td><td>Lists directories searched for executable commands.</td></tr>
+<tr><td>systemctl</td><td>Controls and inspects systemd-managed services and units.</td></tr>
+<tr><td>APT / DNF</td><td>Package management tools used by different Linux distributions.</td></tr>
+<tr><td>SSH</td><td>Provides encrypted remote access.</td></tr>
+<tr><td>Pipe (<code>|</code>)</td><td>Connects one command's output to another command's input.</td></tr>
+</table>
+
+<hr>
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LINUX-LEARN%20BY%20DOING-E95420?style=for-the-badge&logo=linux&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LEVEL-BEGINNER%20TO%20INTERMEDIATE-238636?style=for-the-badge"/>
-</p><p align="left">
-  <i>💡 Understand the concepts. Practice the commands. Build real skills.</i>
+<img src="https://img.shields.io/badge/LINUX-LEARN%20BY%20DOING-E95420?style=for-the-badge&logo=linux&logoColor=white" alt="Linux Learn by Doing"/>
+<img src="https://img.shields.io/badge/LEVEL-BEGINNER%20TO%20INTERMEDIATE-238636?style=for-the-badge" alt="Beginner to Intermediate"/>
 </p>
-```Quick note: Your notes now cover Linux fundamentals, architecture, filesystem, permissions, users, booting, packages, processes, networking, services, scripting, and practical commands—all in one organized reference.
+
+<p align="left"><i>💡 Understand the concepts. Practice the commands. Build real skills.</i></p>
