@@ -89,6 +89,16 @@ pwd
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🛠️ 2. FILE AND DIRECTORY MANAGEMENT
 
@@ -128,6 +138,16 @@ mv backup.py main_backup.py
 > ⚠️ **Safety:** Always verify the target before using `rm -r`. Avoid careless use of `rm -rf`, especially with administrator privileges.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 📄 3. TEXT PROCESSING AND SEARCH
 
@@ -186,6 +206,16 @@ wc -l main.py
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🔗 4. PIPES AND REDIRECTION
 
@@ -238,6 +268,16 @@ command 2>/dev/null
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🔍 5. FILE SEARCH AND STORAGE
 
@@ -287,7 +327,16 @@ df -h
 du -sh ~/Downloads
 ```
 
----
+---<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🔐 6. PERMISSIONS AND OWNERSHIP
 
@@ -337,6 +386,16 @@ chmod 755 script.sh
 > 🔒 Use `sudo` only when necessary. Never assume every command needs administrator privileges.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 👤 7. USER AND GROUP MANAGEMENT
 
@@ -362,6 +421,16 @@ chmod 755 script.sh
 | `chage -l username` | Inspect password-aging information |
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # ⚙️ 8. PROCESS MANAGEMENT
 
@@ -408,6 +477,16 @@ Replace `PID` with the actual process ID.
 **Important:** Use `kill -9 PID` only if normal termination fails.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🖥️ 9. SYSTEM INFORMATION
 
@@ -434,6 +513,16 @@ Replace `PID` with the actual process ID.
 | `getconf LONG_BIT` | Display the environment's word size |
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 📦 10. PACKAGE MANAGEMENT
 
@@ -484,6 +573,16 @@ sudo snap refresh
 > ⚠️ Use the package manager supported by your Linux distribution.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🌐 11. NETWORKING COMMANDS
 
@@ -532,6 +631,16 @@ curl -I https://example.com
 **Note:** Network scans and packet captures should be performed only on systems and networks you are authorized to test.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🔑 12. SSH AND REMOTE ACCESS
 
@@ -557,6 +666,16 @@ ssh username@192.168.1.10
 Replace the username and IP address with the correct remote account and host.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🗜️ 13. ARCHIVES AND COMPRESSION
 
@@ -590,6 +709,16 @@ tar -xzf backup.tar.gz
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🧠 14. ENVIRONMENT VARIABLES
 
@@ -618,6 +747,16 @@ echo "$PROJECT_NAME"
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🐚 15. BASH SCRIPTING
 
@@ -725,6 +864,16 @@ shellcheck script.sh
 `ShellCheck` must be installed separately.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # ⏰ 16. SERVICES AND LOGS
 
@@ -774,6 +923,16 @@ Runs the script daily at 9:00 AM according to the cron daemon's time configurati
 > ⚠️ Always check the service name and configuration before starting, stopping, or disabling system services.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 💽 17. DISK AND FILESYSTEM MANAGEMENT
 
@@ -807,6 +966,16 @@ sudo swapon /dev/DEVICE_PARTITION
 **Never execute them blindly.** Replace placeholders only after verifying the correct device and following filesystem-specific instructions. Formatting creates a new filesystem and may destroy existing data.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🐍 18. PROGRAMMING AND DEVELOPMENT
 
@@ -878,6 +1047,16 @@ code .
 `code .` opens the current directory in Visual Studio Code when its command-line launcher is installed and available.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🌿 19. GIT AND GITHUB
 
@@ -922,6 +1101,16 @@ git config --global user.email "you@example.com"
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🐳 20. DOCKER BASICS
 
@@ -950,6 +1139,16 @@ git config --global user.email "you@example.com"
 > 🐳 These commands require Docker or a compatible container runtime.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🧪 21. ADVANCED LINUX UTILITIES
 
@@ -978,6 +1177,16 @@ git config --global user.email "you@example.com"
 Some commands require additional packages, permissions, or distribution-specific configuration.
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # 🚨 22. COMMON LINUX TROUBLESHOOTING
 
@@ -1085,6 +1294,16 @@ Replace `SERVICE_NAME` with the actual service name.
 </details>
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # ⚡ 23. TERMINAL SHORTCUTS
 
@@ -1133,6 +1352,16 @@ ip a
 ```
 
 ---
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 # ⚠️ IMPORTANT SAFETY RULES
 
@@ -1158,3 +1387,13 @@ ip a
 ⭐ If this cheat sheet helps you, consider starring the repository!
 
 </div>
+<p align="center">
+  <a href="#-1-directory-navigation"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
