@@ -1,5 +1,5 @@
 <h1 align="left">🐧 Linux Core Notes</h1>
-<!-- 🧭 LINUX CORE NOTES INDEX -->
+
 <h2 id="index">🧭 Linux Core Notes — Quick Navigation</h2>
 
 <p align="center">
@@ -35,6 +35,42 @@
 </p>
 
 <hr>
+
+<p align="center">
+  <a href="#index">
+    <img src="https://img.shields.io/badge/⬆️%20BACK%20TO%20INDEX-Click%20Here-blue?style=for-the-badge" alt="Back to Index">
+  </a>
+</p>
+
+<h2 id="history">🕰️ 01. History of Linux</h2>
+<h2 id="what-is-linux">🧑‍💻 02. What Is Linux?</h2>
+<h2 id="linux-vs-unix">⚖️ 03. Linux vs Unix</h2>
+<h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
+<h2 id="distributions">📦 05. Major Linux Distributions</h2>
+<h2 id="architecture">🏗️ 06. Linux Architecture: Kernel &amp; Shell</h2>
+<h2 id="gnu-project">🧩 07. The GNU Project</h2>
+<h2 id="understanding-shell">🐚 08. Understanding the Shell</h2>
+<h2 id="popular-shells">🏁 09. Popular Linux Shells</h2>
+<h2 id="kernel">🧠 10. The Linux Kernel</h2>
+<h2 id="filesystem-hierarchy">📂 11. Linux File System Hierarchy</h2>
+<h2 id="file-types">📄 12. Basic Linux File Types</h2>
+<h2 id="users-groups">👥 13. Linux Users and Groups</h2>
+<h2 id="permissions">🔐 14. Linux File Permissions</h2>
+<h2 id="boot-process">🚀 15. Linux Boot Process</h2>
+<h2 id="package-management">📦 16. Linux Package Management</h2>
+<h2 id="process-management">⚙️ 17. Linux Process Management</h2>
+<h2 id="environment-variables">🌱 18. Environment Variables</h2>
+<h2 id="networking">🌐 19. Linux Networking Basics</h2>
+<h2 id="services">🔧 20. Linux Services and Daemons</h2>
+<h2 id="filesystem-types">💽 21. Linux File System Types</h2>
+<h2 id="redirection">🔀 22. Standard Input, Output &amp; Redirection</h2>
+<h2 id="command-structure">⌨️ 23. Linux Command Structure</h2>
+<h2 id="paths">🧭 24. Absolute vs Relative Paths</h2>
+<h2 id="text-editors">📝 25. Linux Text Editors</h2>
+<h2 id="shell-scripting">📜 26. Shell Scripting Basics</h2>
+<h2 id="advantages-limitations">🔍 27. Linux Advantages and Limitations</h2>
+<h2 id="essential-commands">🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
+<h2 id="quick-revision">📚 Quick Revision</h2>
 <p align="center">
   <a href="#index">
     <img src="https://img.shields.io/badge/⬆️%20BACK%20TO%20INDEX-Click%20Here-blue?style=for-the-badge" alt="Back to Index">
