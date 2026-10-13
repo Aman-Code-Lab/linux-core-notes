@@ -18,29 +18,35 @@ networking, DevOps, and AI/ML development.*
 
 ## 📚 TABLE OF CONTENTS
 
-- [📁 Navigation](#-1-directory-navigation)
-- [🛠️ File Management](#️-2-file-and-directory-management)
-- [📄 Text Processing](#-3-text-processing-and-search)
-- [🔗 Pipes and Redirection](#-4-pipes-and-redirection)
-- [🔍 Finding Files](#-5-file-search-and-storage)
-- [🔐 Permissions](#-6-permissions-and-ownership)
-- [👤 User Management](#-7-user-and-group-management)
-- [⚙️ Process Management](#️-8-process-management)
-- [🖥️ System Information](#️-9-system-information)
-- [📦 Package Management](#-10-package-management)
-- [🌐 Networking](#-11-networking-commands)
-- [🔑 SSH and Remote Access](#-12-ssh-and-remote-access)
-- [🗜️ Compression](#️-13-archives-and-compression)
-- [🧠 Environment Variables](#-14-environment-variables)
-- [🐚 Bash Scripting](#-15-bash-scripting)
-- [⏰ Services and Logs](#-16-services-and-logs)
-- [💽 Disk Management](#-17-disk-and-filesystem-management)
-- [🐍 Programming Tools](#-18-programming-and-development)
-- [🌿 Git Commands](#-19-git-and-github)
-- [🐳 Docker](#-20-docker-basics)
-- [🧪 Advanced Utilities](#-21-advanced-linux-utilities)
-- [🚨 Troubleshooting](#-22-common-linux-troubleshooting)
-- [⚡ Terminal Shortcuts](#-23-terminal-shortcuts)
+<!-- ⚡ LINUX COMMANDS — BADGE INDEX -->
+
+<h2 align="center">⚡ LINUX COMMANDS NAVIGATION</h2>
+
+<p align="center">
+  <a href="#-1-directory-navigation"><img src="https://img.shields.io/badge/📁_01_Directory_Navigation-blue?style=for-the-badge" alt="Directory Navigation"></a>
+  <a href="#️-2-file-and-directory-management"><img src="https://img.shields.io/badge/🛠️_02_File_Management-green?style=for-the-badge" alt="File Management"></a>
+  <a href="#-3-text-processing-and-search"><img src="https://img.shields.io/badge/📄_03_Text_Processing-orange?style=for-the-badge" alt="Text Processing"></a>
+  <a href="#-4-pipes-and-redirection"><img src="https://img.shields.io/badge/🔗_04_Pipes_&_Redirection-purple?style=for-the-badge" alt="Pipes and Redirection"></a>
+  <a href="#-5-file-search-and-storage"><img src="https://img.shields.io/badge/🔍_05_File_Search-blueviolet?style=for-the-badge" alt="File Search"></a>
+  <a href="#-6-permissions-and-ownership"><img src="https://img.shields.io/badge/🔐_06_Permissions-red?style=for-the-badge" alt="Permissions"></a>
+  <a href="#-7-user-and-group-management"><img src="https://img.shields.io/badge/👤_07_User_Management-yellow?style=for-the-badge" alt="User Management"></a>
+  <a href="#️-8-process-management"><img src="https://img.shields.io/badge/⚙️_08_Process_Management-orange?style=for-the-badge" alt="Process Management"></a>
+  <a href="#️-9-system-information"><img src="https://img.shields.io/badge/🖥️_09_System_Information-blue?style=for-the-badge" alt="System Information"></a>
+  <a href="#-10-package-management"><img src="https://img.shields.io/badge/📦_10_Package_Management-green?style=for-the-badge" alt="Package Management"></a>
+  <a href="#-11-networking-commands"><img src="https://img.shields.io/badge/🌐_11_Networking-brightgreen?style=for-the-badge" alt="Networking"></a>
+  <a href="#-12-ssh-and-remote-access"><img src="https://img.shields.io/badge/🔑_12_SSH_&_Remote_Access-purple?style=for-the-badge" alt="SSH and Remote Access"></a>
+  <a href="#️-13-archives-and-compression"><img src="https://img.shields.io/badge/🗜️_13_Compression-orange?style=for-the-badge" alt="Compression"></a>
+  <a href="#-14-environment-variables"><img src="https://img.shields.io/badge/🧠_14_Environment_Variables-blueviolet?style=for-the-badge" alt="Environment Variables"></a>
+  <a href="#-15-bash-scripting"><img src="https://img.shields.io/badge/🐚_15_Bash_Scripting-green?style=for-the-badge" alt="Bash Scripting"></a>
+  <a href="#-16-services-and-logs"><img src="https://img.shields.io/badge/⏰_16_Services_&_Logs-blue?style=for-the-badge" alt="Services and Logs"></a>
+  <a href="#-17-disk-and-filesystem-management"><img src="https://img.shields.io/badge/💽_17_Disk_Management-red?style=for-the-badge" alt="Disk Management"></a>
+  <a href="#-18-programming-and-development"><img src="https://img.shields.io/badge/🐍_18_Programming_Tools-brightgreen?style=for-the-badge" alt="Programming Tools"></a>
+  <a href="#-19-git-and-github"><img src="https://img.shields.io/badge/🌿_19_Git_&_GitHub-green?style=for-the-badge" alt="Git and GitHub"></a>
+  <a href="#-20-docker-basics"><img src="https://img.shields.io/badge/🐳_20_Docker-blue?style=for-the-badge" alt="Docker"></a>
+  <a href="#-21-advanced-linux-utilities"><img src="https://img.shields.io/badge/🧪_21_Advanced_Utilities-purple?style=for-the-badge" alt="Advanced Utilities"></a>
+  <a href="#-22-common-linux-troubleshooting"><img src="https://img.shields.io/badge/🚨_22_Troubleshooting-red?style=for-the-badge" alt="Troubleshooting"></a>
+  <a href="#-23-terminal-shortcuts"><img src="https://img.shields.io/badge/⚡_23_Terminal_Shortcuts-orange?style=for-the-badge" alt="Terminal Shortcuts"></a>
+</p>
 
 ---
 
