@@ -186,12 +186,11 @@ Linux is a Unix-like operating system kernel, while Unix refers to an older fami
 
 ---
 
-<h2 id="linux-vs-unix">⚖️ 03. Linux vs Unix</h2>
+<h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
 <table>
 <tr>
 <td width="33%" valign="top">
-  
-<h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
+
 
 ### 📱 Smartphones
 
