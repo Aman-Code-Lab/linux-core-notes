@@ -1,5 +1,101 @@
 <h1 align="left">🐧 Linux Core Notes</h1>
+<!-- 📚 INDEX / TABLE OF CONTENTS -->
+<h2 id="index">📚 Linux Notes — Index</h2>
 
+<table>
+  <tr>
+    <th>No.</th>
+    <th>Topic</th>
+    <th>No.</th>
+    <th>Topic</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><a href="#linux-intro">Introduction to Linux</a></td>
+    <td>15</td>
+    <td><a href="#boot-process">Linux Boot Process</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="#features">Key Features of Linux</a></td>
+    <td>16</td>
+    <td><a href="#package-management">Package Management</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href="#history">History of Linux</a></td>
+    <td>17</td>
+    <td><a href="#process-management">Process Management</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="#linux-vs-unix">Linux vs Unix</a></td>
+    <td>18</td>
+    <td><a href="#environment-variables">Environment Variables</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="#gnu-project">GNU Project</a></td>
+    <td>19</td>
+    <td><a href="#networking">Networking</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><a href="#filesystem">Linux File System Hierarchy</a></td>
+    <td>20</td>
+    <td><a href="#services">Services and Daemons</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="#commands">Basic Linux Commands</a></td>
+    <td>21</td>
+    <td><a href="#filesystem-types">Filesystem Types</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="#navigation">Navigation Commands</a></td>
+    <td>22</td>
+    <td><a href="#redirection">Redirection and Pipes</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="#file-types">Linux File Types</a></td>
+    <td>23</td>
+    <td><a href="#command-structure">Command Structure</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a href="#users-groups">Users and Groups</a></td>
+    <td>24</td>
+    <td><a href="#paths">Absolute vs Relative Paths</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="#permissions">File Permissions</a></td>
+    <td>25</td>
+    <td><a href="#text-editors">Text Editors</a></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><a href="#boot-process">Boot Process</a></td>
+    <td>26</td>
+    <td><a href="#shell-scripting">Shell Scripting</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><a href="#package-management">Package Management</a></td>
+    <td>27</td>
+    <td><a href="#advantages-limitations">Advantages and Limitations</a></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><a href="#networking">Networking Basics</a></td>
+    <td>28</td>
+    <td><a href="#cheat-sheet">Essential Command Cheat Sheet</a></td>
+  </tr>
+</table>
+
+<p align="right"><a href="#index">⬆️ Back to Index</a></p>
 <p align="left">
   <img src="https://img.shields.io/badge/LINUX-CORE%20NOTES-E95420?style=for-the-badge&logo=linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/OPEN%20SOURCE-GNU-222222?style=for-the-badge&logo=gnu&logoColor=white"/>
