@@ -1,5 +1,6 @@
 <h1 align="left">🐧 Linux Core Notes</h1>
 
+<!-- 🧭 LINUX CORE NOTES INDEX -->
 <h2 id="index">🧭 Linux Core Notes — Quick Navigation</h2>
 
 <p align="center">
@@ -42,41 +43,6 @@
   </a>
 </p>
 
-
-
-
-
-
-
-<h2 id="gnu-project">🧩 07. The GNU Project</h2>
-<h2 id="understanding-shell">🐚 08. Understanding the Shell</h2>
-<h2 id="popular-shells">🏁 09. Popular Linux Shells</h2>
-<h2 id="kernel">🧠 10. The Linux Kernel</h2>
-<h2 id="filesystem-hierarchy">📂 11. Linux File System Hierarchy</h2>
-<h2 id="file-types">📄 12. Basic Linux File Types</h2>
-<h2 id="users-groups">👥 13. Linux Users and Groups</h2>
-<h2 id="permissions">🔐 14. Linux File Permissions</h2>
-<h2 id="boot-process">🚀 15. Linux Boot Process</h2>
-<h2 id="package-management">📦 16. Linux Package Management</h2>
-<h2 id="process-management">⚙️ 17. Linux Process Management</h2>
-<h2 id="environment-variables">🌱 18. Environment Variables</h2>
-<h2 id="networking">🌐 19. Linux Networking Basics</h2>
-<h2 id="services">🔧 20. Linux Services and Daemons</h2>
-<h2 id="filesystem-types">💽 21. Linux File System Types</h2>
-<h2 id="redirection">🔀 22. Standard Input, Output &amp; Redirection</h2>
-<h2 id="command-structure">⌨️ 23. Linux Command Structure</h2>
-<h2 id="paths">🧭 24. Absolute vs Relative Paths</h2>
-<h2 id="text-editors">📝 25. Linux Text Editors</h2>
-<h2 id="shell-scripting">📜 26. Shell Scripting Basics</h2>
-<h2 id="advantages-limitations">🔍 27. Linux Advantages and Limitations</h2>
-<h2 id="essential-commands">🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
-<h2 id="quick-revision">📚 Quick Revision</h2>
-<p align="center">
-  <a href="#index">
-    <img src="https://img.shields.io/badge/⬆️%20BACK%20TO%20INDEX-Click%20Here-blue?style=for-the-badge" alt="Back to Index">
-  </a>
-</p>
-
 <h2 id="history">🕰️ 01. History of Linux</h2>
 
 <table>
@@ -113,6 +79,7 @@ Linux was created by <b>Linus Torvalds in 1991</b> as a Unix-like kernel. Inspir
 ---
 
 <h2 id="what-is-linux">🧑‍💻 02. What Is Linux?</h2>
+
 <table>
 <tr>
 <td width="65%" valign="top">
@@ -187,10 +154,10 @@ Linux is a Unix-like operating system kernel, while Unix refers to an older fami
 ---
 
 <h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
+
 <table>
 <tr>
 <td width="33%" valign="top">
-
 
 ### 📱 Smartphones
 
@@ -289,7 +256,7 @@ A Linux distribution combines the Linux kernel with system utilities, package ma
 
 ---
 
-<h2 id="architecture">🏗️ 06. Linux Architecture: Kernel &amp; Shell</h2>
+<h2 id="architecture">🏗️ 06. Linux Architecture: Kernel & Shell</h2>
 
 <table>
 <tr>
@@ -328,7 +295,7 @@ The physical components controlled through kernel subsystems and device drivers.
 
 ---
 
-<h2>🧩 07. The GNU Project</h2>
+<h2 id="gnu-project">🧩 07. The GNU Project</h2>
 
 <p>
 The GNU Project was launched by <b>Richard Stallman in 1983</b> to create a free Unix-like operating system. GNU provides essential utilities and tools used by many Linux distributions.
@@ -367,7 +334,7 @@ The GNU Project was launched by <b>Richard Stallman in 1983</b> to create a free
 
 ---
 
-<h2>🐚 08. Understanding the Shell</h2>
+<h2 id="understanding-shell">🐚 08. Understanding the Shell</h2>
 
 <p>
 A shell is a command interpreter that allows users to interact with the operating system by entering commands or running scripts.
@@ -410,7 +377,7 @@ The program's output or error messages appear in the terminal.
 
 ---
 
-<h2>🏁 09. Popular Linux Shells</h2>
+<h2 id="popular-shells">🏁 09. Popular Linux Shells</h2>
 
 <table>
 <tr>
@@ -449,7 +416,7 @@ The program's output or error messages appear in the terminal.
 
 ---
 
-<h2>🧠 10. The Linux Kernel</h2>
+<h2 id="kernel">🧠 10. The Linux Kernel</h2>
 
 <p>
 The kernel is the core component of an operating system. It manages hardware resources and provides essential services through system calls.
@@ -488,7 +455,7 @@ The kernel is the core component of an operating system. It manages hardware res
 
 ---
 
-<h2>📂 11. Linux File System Hierarchy</h2>
+<h2 id="filesystem-hierarchy">📂 11. Linux File System Hierarchy</h2>
 
 <p>
 Linux organizes files and directories in a tree structure that begins at the root directory <code>/</code>. Unlike Windows, Linux does not normally use separate drive letters such as C: and D:.
@@ -572,7 +539,6 @@ Linux organizes files and directories in a tree structure that begins at the roo
 </tr>
 </table>
 
-<!-- 💻 Useful Navigation Commands -->
 <h2>🧭 Useful Navigation Commands</h2>
 
 <pre><code>pwd                 # Show the current directory
@@ -581,14 +547,13 @@ ls -la              # List all entries with details
 cd /home            # Move to /home
 cd ~                # Go to your home directory
 cd ..               # Move one directory up
-cd /                 # Go to the filesystem root
+cd /                # Go to the filesystem root
 mkdir projects      # Create a directory
 touch notes.txt     # Create an empty file</code></pre>
 
 <hr>
 
-<!-- 📄 12. Basic Linux File Types -->
-<h2>📄 12. Basic Linux File Types</h2>
+<h2 id="file-types">📄 12. Basic Linux File Types</h2>
 
 <p>Linux supports different file types. Use <code>ls -l</code> to see the file-type symbol at the beginning of each entry.</p>
 
@@ -612,8 +577,7 @@ ln -s notes.txt link.txt    # Create a symbolic link</code></pre>
 
 <hr>
 
-<!-- 👥 13. Linux Users and Groups -->
-<h2>👥 13. Linux Users and Groups</h2>
+<h2 id="users-groups">👥 13. Linux Users and Groups</h2>
 
 <p>Linux uses users and groups to control access to files, directories, and system resources.</p>
 
@@ -643,8 +607,7 @@ sudo userdel student                # Delete a user account</code></pre>
 
 <hr>
 
-<!-- 🔐 14. Linux File Permissions -->
-<h2>🔐 14. Linux File Permissions</h2>
+<h2 id="permissions">🔐 14. Linux File Permissions</h2>
 
 <p>Permissions determine who can read, write, or execute a file. They are commonly assigned to the owner, group, and others.</p>
 
@@ -683,8 +646,7 @@ sudo chgrp developers notes.txt # Change group ownership</code></pre>
 
 <hr>
 
-<!-- 🚀 15. Linux Boot Process -->
-<h2>🚀 15. Linux Boot Process</h2>
+<h2 id="boot-process">🚀 15. Linux Boot Process</h2>
 
 <p>The boot process begins when the computer is powered on and continues until the operating system is ready to use.</p>
 
@@ -711,8 +673,7 @@ journalctl -b          # View logs from current boot</code></pre>
 
 <hr>
 
-<!-- 📦 16. Linux Package Management -->
-<h2>📦 16. Linux Package Management</h2>
+<h2 id="package-management">📦 16. Linux Package Management</h2>
 
 <p>A package manager installs, updates, and removes software while helping manage dependencies.</p>
 
@@ -745,8 +706,7 @@ rpm -qa                 # List installed RPM packages</code></pre>
 
 <hr>
 
-<!-- ⚙️ 17. Linux Process Management -->
-<h2>⚙️ 17. Linux Process Management</h2>
+<h2 id="process-management">⚙️ 17. Linux Process Management</h2>
 
 <p>A process is a running instance of a program. Linux assigns each process a Process ID (PID) and records its relationship with its parent process.</p>
 
@@ -786,8 +746,7 @@ bg                       # Resume a stopped job in the background</code></pre>
 
 <hr>
 
-<!-- 🌱 18. Environment Variables -->
-<h2>🌱 18. Environment Variables</h2>
+<h2 id="environment-variables">🌱 18. Environment Variables</h2>
 
 <p>Environment variables store values that programs and shells use to determine settings and behavior.</p>
 
@@ -815,8 +774,7 @@ unset APP_ENV              # Remove the variable</code></pre>
 
 <hr>
 
-<!-- 🌐 19. Linux Networking Basics -->
-<h2>🌐 19. Linux Networking Basics</h2>
+<h2 id="networking">🌐 19. Linux Networking Basics</h2>
 
 <p>Linux networking tools help inspect interfaces, IP addresses, routing, DNS, remote access, and active connections.</p>
 
@@ -844,8 +802,7 @@ curl -I https://example.com     # Inspect HTTP response headers</code></pre>
 
 <hr>
 
-<!-- 🔧 20. Linux Services and Daemons -->
-<h2>🔧 20. Linux Services and Daemons</h2>
+<h2 id="services">🔧 20. Linux Services and Daemons</h2>
 
 <p>A service is a system function managed by the operating system. A daemon is a background process that commonly provides a service without direct interactive input.</p>
 
@@ -866,8 +823,7 @@ journalctl -u ssh                    # View service logs</code></pre>
 
 <hr>
 
-<!-- 💽 21. Linux File System Types -->
-<h2>💽 21. Linux File System Types</h2>
+<h2 id="filesystem-types">💽 21. Linux File System Types</h2>
 
 <p>A filesystem defines how data is organized, stored, and retrieved on a storage device.</p>
 
@@ -893,8 +849,7 @@ mount              # Show or manage mounts</code></pre>
 
 <hr>
 
-<!-- 🔀 22. Standard Input, Output and Redirection -->
-<h2>🔀 22. Standard Input, Output &amp; Redirection</h2>
+<h2 id="redirection">🔀 22. Standard Input, Output &amp; Redirection</h2>
 
 <p>Linux commands use standard input, standard output, and standard error to receive data and produce results.</p>
 
@@ -927,8 +882,7 @@ grep "error" app.log | wc -l    # Count matching lines</code></pre>
 
 <hr>
 
-<!-- ⌨️ 23. Linux Command Structure -->
-<h2>⌨️ 23. Linux Command Structure</h2>
+<h2 id="command-structure">⌨️ 23. Linux Command Structure</h2>
 
 <p>A Linux command usually consists of a command name followed by options and arguments.</p>
 
@@ -965,8 +919,7 @@ echo $?                   # Display the previous command's exit status</code></p
 
 <hr>
 
-<!-- 🧭 24. Absolute vs Relative Paths -->
-<h2>🧭 24. Absolute vs Relative Paths</h2>
+<h2 id="paths">🧭 24. Absolute vs Relative Paths</h2>
 
 <p>A path identifies the location of a file or directory in the filesystem.</p>
 
@@ -992,8 +945,7 @@ cat /home/student/notes.txt</code></pre>
 
 <hr>
 
-<!-- 📝 25. Linux Text Editors -->
-<h2>📝 25. Linux Text Editors</h2>
+<h2 id="text-editors">📝 25. Linux Text Editors</h2>
 
 <p>Text editors let you create and modify configuration files, scripts, source code, and documentation directly in the terminal.</p>
 
@@ -1035,8 +987,7 @@ less /var/log/syslog    # Read a file page by page</code></pre>
 
 <hr>
 
-<!-- 📜 26. Shell Scripting Basics -->
-<h2>📜 26. Shell Scripting Basics</h2>
+<h2 id="shell-scripting">📜 26. Shell Scripting Basics</h2>
 
 <p>A shell script is a text file containing commands executed by a shell. Scripts automate repetitive tasks using variables, conditions, loops, and functions.</p>
 
@@ -1099,8 +1050,7 @@ greet</code></pre>
 
 <hr>
 
-<!-- 🔍 27. Linux Advantages and Limitations -->
-<h2>🔍 27. Linux Advantages and Limitations</h2>
+<h2 id="advantages-limitations">🔍 27. Linux Advantages and Limitations</h2>
 
 <table>
 <tr><th width="50%" align="left">✅ Advantages</th><th width="50%" align="left">⚠️ Limitations</th></tr>
@@ -1138,8 +1088,7 @@ greet</code></pre>
 
 <hr>
 
-<!-- 🛠️ 28. Essential Linux Commands Cheat Sheet -->
-<h2>🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
+<h2 id="essential-commands">🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
 
 <table>
 <tr><th align="left">Task</th><th align="left">Command</th></tr>
@@ -1166,8 +1115,7 @@ greet</code></pre>
 
 <hr>
 
-<!-- 📚 Quick Revision -->
-<h2>📚 Quick Revision</h2>
+<h2 id="quick-revision">📚 Quick Revision</h2>
 
 <table>
 <tr><th align="left">Concept</th><th align="left">Meaning</th></tr>
