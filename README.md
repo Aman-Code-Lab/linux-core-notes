@@ -34,7 +34,7 @@ Linux is an open-source, Unix-like operating system ecosystem built around the L
 </td>
 <td width="35%" valign="middle" align="center">
 
-<img src="https://skillicons.dev/icons?i=linux,bash,ubuntu,debian" alt="Linux ecosystem"/>
+<img src="https://skillicons.dev/icons?i=linux,bash,ubuntu,debian" alt="Linux ecosystem" width="100%"/>
 
 <br><br>
 
@@ -212,13 +212,9 @@ Available in many distributions designed for desktops, servers, cloud infrastruc
 
 <h2 align="left">🏗️ 05. Linux Architecture: Kernel & Shell</h2>
 
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/00a5cfdd-80b2-4ede-89f2-fb8e402d8308" width="85%" alt="Linux Architecture Diagram"/>
-</p>
-
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="65%" valign="top">
 
 ### 🖥️ User Application Layer
 
@@ -226,20 +222,11 @@ The layer where applications, command-line utilities, and user programs run.
 
 **Examples:** Browsers, text editors, terminal applications.
 
-</td>
-<td width="50%" valign="top">
-
 ### 🐚 Shell Interface
 
 The command interpreter that reads user input, processes commands, and launches programs.
 
 **Examples:** Bash, Zsh, Fish.
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
 
 ### ⚙️ Kernel Space
 
@@ -247,14 +234,16 @@ The privileged core that manages processes, memory, devices, networking, and sys
 
 **Examples:** Process scheduling and memory allocation.
 
-</td>
-<td width="50%" valign="top">
-
 ### 🔩 Hardware Layer
 
 The physical components controlled through kernel subsystems and device drivers.
 
 **Examples:** CPU, RAM, storage, network interfaces.
+
+</td>
+<td width="35%" valign="middle" align="center">
+
+<img src="https://github.com/user-attachments/assets/00a5cfdd-80b2-4ede-89f2-fb8e402d8308" width="100%" alt="Linux Architecture Diagram"/>
 
 </td>
 </tr>
@@ -311,13 +300,9 @@ The program's output or error messages are displayed in the terminal.
 
 <h2 align="left">🏁 07. Popular Linux Shells</h2>
 
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/4fe27a61-764c-4896-b228-1a65aa7a80d4" width="85%" alt="Linux Shells Overview"/>
-</p>
-
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="65%" valign="top">
 
 ### 🟢 Bash
 
@@ -327,9 +312,6 @@ The program's output or error messages are displayed in the terminal.
 - Widely used for Linux command-line work.
 - Supports scripting, variables, loops, and functions.
 
-</td>
-<td width="50%" valign="top">
-
 ### 🟣 Zsh
 
 <img src="https://img.shields.io/badge/ZSH-CUSTOMIZABLE-674188?style=for-the-badge&logo=zsh&logoColor=white"/>
@@ -337,11 +319,6 @@ The program's output or error messages are displayed in the terminal.
 - Z Shell.
 - Offers advanced completion and customization.
 - Popular among developers.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
 
 ### 🐟 Fish
 
@@ -351,9 +328,6 @@ The program's output or error messages are displayed in the terminal.
 - Provides interactive suggestions and convenient defaults.
 - Uses syntax that differs from Bash in several areas.
 
-</td>
-<td width="50%" valign="top">
-
 ### 🐚 Csh / Tcsh
 
 <img src="https://img.shields.io/badge/CSH-C%20LIKE%20SYNTAX-64748B?style=for-the-badge&logo=linux&logoColor=white"/>
@@ -361,6 +335,11 @@ The program's output or error messages are displayed in the terminal.
 - C Shell and its enhanced version, Tcsh.
 - Use a C-like command syntax.
 - Found in some Unix and Linux environments.
+
+</td>
+<td width="35%" valign="middle" align="center">
+
+<img src="https://github.com/user-attachments/assets/4fe27a61-764c-4896-b228-1a65aa7a80d4" width="100%" alt="Linux Shells Overview"/>
 
 </td>
 </tr>
@@ -374,17 +353,11 @@ The program's output or error messages are displayed in the terminal.
   <img src="https://img.shields.io/badge/KERNEL-SYSTEM%20CORE-E95420?style=for-the-badge&logo=linux&logoColor=white"/>
 </p>
 
-<p align="left">
-  The kernel is the core component of an operating system. It manages hardware resources and provides essential services that applications use through system calls.
-</p>
-
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/977281fa-c97d-4d16-8a5a-ebaf506635a2" width="85%" alt="Linux Kernel Functions Diagram"/>
-</p>
-
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="65%" valign="top">
+
+The kernel is the core component of an operating system. It manages hardware resources and provides essential services that applications use through system calls.
 
 ### ⚙️ Process Management
 
@@ -392,19 +365,11 @@ The program's output or error messages are displayed in the terminal.
 - Schedules processes for CPU time.
 - Coordinates multitasking.
 
-</td>
-<td width="50%" valign="top">
-
 ### 🧠 Memory Management
 
 - Allocates and frees memory.
 - Manages virtual memory.
 - Isolates process address spaces.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
 
 ### 🔌 Device Management
 
@@ -412,14 +377,16 @@ The program's output or error messages are displayed in the terminal.
 - Coordinates access to devices.
 - Supports storage and network interfaces.
 
-</td>
-<td width="50%" valign="top">
-
 ### 🔐 System Calls
 
 - Provide an interface between programs and kernel services.
 - Allow controlled access to system resources.
 - Support operations such as file access and process creation.
+
+</td>
+<td width="35%" valign="middle" align="center">
+
+<img src="https://github.com/user-attachments/assets/977281fa-c97d-4d16-8a5a-ebaf506635a2" width="100%" alt="Linux Kernel Functions Diagram"/>
 
 </td>
 </tr>
