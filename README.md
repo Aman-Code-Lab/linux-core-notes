@@ -38,8 +38,13 @@
 <hr>
 
 <p align="center">
-  <a href="#index">
-    <img src="https://img.shields.io/badge/⬆️%20BACK%20TO%20INDEX-Click%20Here-blue?style=for-the-badge" alt="Back to Index">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
   </a>
 </p>
 
@@ -76,6 +81,17 @@ Linux was created by <b>Linus Torvalds in 1991</b> as a Unix-like kernel. Inspir
 </tr>
 </table>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 ---
 
 <h2 id="what-is-linux">🧑‍💻 02. What Is Linux?</h2>
@@ -109,6 +125,17 @@ Linux is an open-source, Unix-like operating system ecosystem built around the L
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 ---
 
@@ -151,6 +178,17 @@ Linux is a Unix-like operating system kernel, while Unix refers to an older fami
 </tr>
 </table>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 ---
 
 <h2 id="linux-everywhere">🌐 04. Linux Is Everywhere</h2>
@@ -186,6 +224,17 @@ Linux is the dominant operating system family in the TOP500 supercomputer rankin
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 ---
 
@@ -254,6 +303,17 @@ A Linux distribution combines the Linux kernel with system utilities, package ma
 </tr>
 </table>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 ---
 
 <h2 id="architecture">🏗️ 06. Linux Architecture: Kernel & Shell</h2>
@@ -293,6 +353,17 @@ The physical components controlled through kernel subsystems and device drivers.
 </tr>
 </table>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 ---
 
 <h2 id="gnu-project">🧩 07. The GNU Project</h2>
@@ -330,6 +401,17 @@ The GNU Project was launched by <b>Richard Stallman in 1983</b> to create a free
 
 <p>
 💡 <b>Remember:</b> Linux is technically the kernel; a complete Linux-based operating system commonly combines it with GNU utilities and other software.
+</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
 </p>
 
 ---
@@ -375,6 +457,17 @@ The program's output or error messages appear in the terminal.
 </tr>
 </table>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 ---
 
 <h2 id="popular-shells">🏁 09. Popular Linux Shells</h2>
@@ -414,6 +507,17 @@ The program's output or error messages appear in the terminal.
 </tr>
 </table>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 ---
 
 <h2 id="kernel">🧠 10. The Linux Kernel</h2>
@@ -452,6 +556,17 @@ The kernel is the core component of an operating system. It manages hardware res
 <td>Provide controlled access to kernel services.</td>
 </tr>
 </table>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 ---
 
@@ -551,6 +666,17 @@ cd /                # Go to the filesystem root
 mkdir projects      # Create a directory
 touch notes.txt     # Create an empty file</code></pre>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="file-types">📄 12. Basic Linux File Types</h2>
@@ -574,6 +700,17 @@ touch notes.txt     # Create an empty file</code></pre>
 file notes.txt              # Identify file content type
 stat notes.txt              # Display file metadata
 ln -s notes.txt link.txt    # Create a symbolic link</code></pre>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -604,6 +741,17 @@ sudo usermod -aG developers student # Add user to group
 sudo userdel student                # Delete a user account</code></pre>
 
 <p><strong>⚠️ Note:</strong> These commands may require root privileges. Check your distribution's options before deleting accounts or changing groups.</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -644,6 +792,17 @@ sudo chgrp developers notes.txt # Change group ownership</code></pre>
 <li><code>chgrp</code> changes group ownership.</li>
 </ul>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="boot-process">🚀 15. Linux Boot Process</h2>
@@ -670,6 +829,17 @@ systemd-analyze        # Analyze boot time
 journalctl -b          # View logs from current boot</code></pre>
 
 <p><em>💡 Boot details vary by firmware, distribution, bootloader, and init system.</em></p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -703,6 +873,17 @@ sudo dnf remove nginx   # Remove a package
 rpm -qa                 # List installed RPM packages</code></pre>
 
 <p><strong>⚠️ Note:</strong> Use the package manager appropriate for your Linux distribution.</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -744,6 +925,17 @@ bg                       # Resume a stopped job in the background</code></pre>
 <li><strong>SIGCONT:</strong> Resumes a stopped process.</li>
 </ul>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="environment-variables">🌱 18. Environment Variables</h2>
@@ -771,6 +963,17 @@ export APP_ENV=development # Set a variable for child processes
 unset APP_ENV              # Remove the variable</code></pre>
 
 <p>💡 Use <code>$VARIABLE_NAME</code> to access a variable's value in the shell.</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -800,6 +1003,17 @@ curl -I https://example.com     # Inspect HTTP response headers</code></pre>
 
 <p><em>💡 Some systems may require installing additional networking tools.</em></p>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="services">🔧 20. Linux Services and Daemons</h2>
@@ -820,6 +1034,17 @@ systemctl list-units --type=service  # List loaded services
 journalctl -u ssh                    # View service logs</code></pre>
 
 <p><strong>⚠️ Note:</strong> Service names vary by distribution. An SSH server may use the name <code>ssh</code> or <code>sshd</code>.</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -846,6 +1071,17 @@ findmnt            # Display mounted filesystems
 mount              # Show or manage mounts</code></pre>
 
 <p><strong>⚠️ Warning:</strong> Formatting a device can permanently erase data. Always verify the target device before performing disk operations.</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -879,6 +1115,17 @@ grep "error" app.log | wc -l    # Count matching lines</code></pre>
 <li><code>|</code> Sends one command's output to another command.</li>
 <li><code>2&gt;</code> Redirects standard error.</li>
 </ul>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -917,6 +1164,17 @@ rm unwanted.txt           # Remove a file</code></pre>
 <pre><code>ls
 echo $?                   # Display the previous command's exit status</code></pre>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="paths">🧭 24. Absolute vs Relative Paths</h2>
@@ -942,6 +1200,17 @@ cd ~/Downloads
 cat /home/student/notes.txt</code></pre>
 
 <p>💡 Absolute paths begin at <code>/</code>; relative paths depend on the current directory.</p>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -984,6 +1253,17 @@ less /var/log/syslog    # Read a file page by page</code></pre>
 <li>Type <code>:wq</code> to save and quit.</li>
 <li>Type <code>:q!</code> to quit without saving changes.</li>
 </ul>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
@@ -1048,6 +1328,17 @@ greet</code></pre>
 <li><strong>Exit Status:</strong> Indicates success or failure.</li>
 </ul>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="advantages-limitations">🔍 27. Linux Advantages and Limitations</h2>
@@ -1086,6 +1377,17 @@ greet</code></pre>
 
 <p>💡 Linux is valuable for programming, system administration, cybersecurity education, cloud computing, and automation. The best operating system depends on your requirements.</p>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="essential-commands">🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
@@ -1113,6 +1415,17 @@ greet</code></pre>
 
 <p><strong>⚠️ Safety:</strong> Use destructive commands such as <code>rm</code>, <code>chmod</code>, <code>chown</code>, and disk-formatting tools carefully. Never run unfamiliar commands with elevated privileges without understanding their effects.</p>
 
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
+
 <hr>
 
 <h2 id="quick-revision">📚 Quick Revision</h2>
@@ -1136,6 +1449,17 @@ greet</code></pre>
 <tr><td>SSH</td><td>Provides encrypted remote access.</td></tr>
 <tr><td>Pipe (<code>|</code>)</td><td>Connects one command's output to another command's input.</td></tr>
 </table>
+
+<p align="center">
+  <a href="#index"
+     title="Back to Index"
+     aria-label="Back to Index"
+     style="display:inline-block; width:34px; height:34px; line-height:34px; border-radius:50%;
+            background:#2563eb; color:#fff; text-align:center; text-decoration:none;
+            font-size:18px; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,.25);">
+    ↑
+  </a>
+</p>
 
 <hr>
 
