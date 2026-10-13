@@ -523,13 +523,9 @@ touch notes.txt     # Create an empty file
 
 ---
 
-<h2>📄 12. Basic Linux File Types</h2>
-
-<p>
+<h2>📄 12. Basic Linux File Types</h2><p>
 Linux represents files using different types. Run <code>ls -l</code> to see the file-type character at the beginning of each entry's permissions.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Symbol</th>
 <th align="left">Type</th>
@@ -570,9 +566,7 @@ Linux represents files using different types. Run <code>ls -l</code> to see the 
 <td>Socket</td>
 <td>Enables communication between processes.</td>
 </tr>
-</table>
-
-🔍 Check File Types
+</table>🔍 Check File Types
 
 ls -l               # View file-type symbols
 file notes.txt      # Identify a file's content type
@@ -581,13 +575,9 @@ ln -s notes.txt link.txt  # Create a symbolic link
 
 ---
 
-<h2>👥 13. Linux Users and Groups</h2>
-
-<p>
+<h2>👥 13. Linux Users and Groups</h2><p>
 Linux uses users and groups to control access to files, directories, and system resources.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Term</th>
 <th align="left">Meaning</th>
@@ -616,9 +606,7 @@ Linux uses users and groups to control access to files, directories, and system 
 <td><code>sudo</code></td>
 <td>Runs permitted commands with elevated privileges.</td>
 </tr>
-</table>
-
-💻 User Management Commands
+</table>💻 User Management Commands
 
 whoami                      # Show current username
 id                          # Show UID, GID, and groups
@@ -634,13 +622,9 @@ sudo userdel student        # Delete a user account
 
 ---
 
-<h2>🔐 14. Linux File Permissions</h2>
-
-<p>
+<h2>🔐 14. Linux File Permissions</h2><p>
 Linux permissions determine who can read, write, or execute a file. Permissions are commonly defined for the owner, group, and others.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Permission</th>
 <th align="left">Symbol</th>
@@ -661,9 +645,7 @@ Linux permissions determine who can read, write, or execute a file. Permissions 
 <td><code>x</code></td>
 <td>1</td>
 </tr>
-</table>
-
-🧠 Understanding Permission Numbers
+</table>🧠 Understanding Permission Numbers
 
 - 7 = 4 + 2 + 1: Read, write, execute.
 - 6 = 4 + 2: Read and write.
@@ -689,53 +671,39 @@ Remember:
 
 ---
 
-<h2>🚀 15. Linux Boot Process</h2>
-
-<p>
+<h2>🚀 15. Linux Boot Process</h2><p>
 The boot process starts when a computer is powered on and continues until the operating system is ready for use.
-</p>
-
-<table>
+</p><table>
 <tr>
-<td align="center" width="20%">
-
-01
+<td align="center" width="20%">01
 
 BIOS / UEFI
 
 Initializes hardware and selects a boot device.
 
 </td>
-<td align="center" width="20%">
-
-02
+<td align="center" width="20%">02
 
 Bootloader
 
 Loads the Linux kernel and, where needed, the initial RAM filesystem.
 
 </td>
-<td align="center" width="20%">
-
-03
+<td align="center" width="20%">03
 
 Kernel
 
 Initializes hardware, memory, and core subsystems.
 
 </td>
-<td align="center" width="20%">
-
-04
+<td align="center" width="20%">04
 
 Init System
 
 Starts as PID 1; commonly systemd.
 
 </td>
-<td align="center" width="20%">
-
-05
+<td align="center" width="20%">05
 
 Services
 
@@ -743,9 +711,7 @@ Starts configured services and brings the system to its target state.
 
 </td>
 </tr>
-</table>
-
-🔍 Useful Boot Commands
+</table>🔍 Useful Boot Commands
 
 systemctl status          # View system state
 systemctl get-default     # Show default systemd target
@@ -756,13 +722,9 @@ journalctl -b             # View logs from current boot
 
 ---
 
-<h2>📦 16. Linux Package Management</h2>
-
-<p>
+<h2>📦 16. Linux Package Management</h2><p>
 A package manager installs, updates, and removes software while helping manage dependencies.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Tool</th>
 <th align="left">Commonly Used On</th>
@@ -788,9 +750,7 @@ A package manager installs, updates, and removes software while helping manage d
 <td>Fedora, RHEL, and related systems</td>
 <td>Works with .rpm packages.</td>
 </tr>
-</table>
-
-💻 APT Commands
+</table>💻 APT Commands
 
 sudo apt update              # Refresh package lists
 sudo apt upgrade             # Upgrade installed packages
@@ -811,13 +771,9 @@ rpm -qa                      # List installed RPM packages
 
 ---
 
-<h2>⚙️ 17. Linux Process Management</h2>
-
-<p>
+<h2>⚙️ 17. Linux Process Management</h2><p>
 A process is a running instance of a program. Linux assigns each process a Process ID (PID) and records its relationship with its parent process.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Concept</th>
 <th align="left">Meaning</th>
@@ -854,9 +810,7 @@ A process is a running instance of a program. Linux assigns each process a Proce
 <td>Zombie</td>
 <td>A terminated process whose exit status has not yet been collected by its parent.</td>
 </tr>
-</table>
-
-💻 Process Commands
+</table>💻 Process Commands
 
 ps                         # Show processes associated with the terminal
 ps aux                     # Show detailed process information
@@ -878,13 +832,9 @@ bg                         # Resume a stopped job in the background
 
 ---
 
-<h2>🌱 18. Environment Variables</h2>
-
-<p>
+<h2>🌱 18. Environment Variables</h2><p>
 Environment variables store values that programs and shells can use to determine settings and behavior.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Variable</th>
 <th align="left">Purpose</th>
@@ -913,9 +863,7 @@ Environment variables store values that programs and shells can use to determine
 <td><code>LANG</code></td>
 <td>Controls the default locale for many programs.</td>
 </tr>
-</table>
-
-💻 Environment Variable Commands
+</table>💻 Environment Variable Commands
 
 echo "$HOME"                    # Display home directory
 echo "$USER"                    # Display username
@@ -929,13 +877,9 @@ unset APP_ENV                   # Remove an exported variable
 
 ---
 
-<h2>🌐 19. Linux Networking Basics</h2>
-
-<p>
+<h2>🌐 19. Linux Networking Basics</h2><p>
 Linux networking tools help inspect network interfaces, IP addresses, routing, DNS, remote access, and active connections.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Concept</th>
 <th align="left">Meaning</th>
@@ -964,9 +908,7 @@ Linux networking tools help inspect network interfaces, IP addresses, routing, D
 <td>Gateway</td>
 <td>A router used to reach networks outside the local network.</td>
 </tr>
-</table>
-
-💻 Networking Commands
+</table>💻 Networking Commands
 
 ip addr                         # Show network interfaces and IP addresses
 ip route                        # Display routing table
@@ -980,17 +922,11 @@ curl -I https://example.com     # Inspect HTTP response headers
 
 ---
 
-<h2>🔧 20. Linux Services and Daemons</h2>
-
-<p>
+<h2>🔧 20. Linux Services and Daemons</h2><p>
 A service is a system function managed by the operating system. A daemon is a background process that commonly provides a service without direct interactive input.
-</p>
-
-<p>
+</p><p>
 Many modern Linux distributions use <code>systemd</code> to manage services through the <code>systemctl</code> command.
-</p>
-
-💻 Service Management
+</p>💻 Service Management
 
 systemctl status ssh           # Check SSH service status
 sudo systemctl start ssh       # Start a service
@@ -1005,13 +941,9 @@ journalctl -u ssh              # View service logs
 
 ---
 
-<h2>💽 21. Linux File System Types</h2>
-
-<p>
+<h2>💽 21. Linux File System Types</h2><p>
 A filesystem defines how data is organized, stored, and retrieved on a storage device.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Filesystem</th>
 <th align="left">Typical Use</th>
@@ -1047,9 +979,7 @@ A filesystem defines how data is organized, stored, and retrieved on a storage d
 <td>Flash drives and external storage</td>
 <td>Supports large files and is widely compatible.</td>
 </tr>
-</table>
-
-💻 Filesystem Commands
+</table>💻 Filesystem Commands
 
 df -h                  # Show filesystem space usage
 du -sh ~/Documents     # Show directory size
@@ -1061,13 +991,9 @@ mount                  # Show or manage mounts
 
 ---
 
-<h2>🔀 22. Standard Input, Output & Redirection</h2>
-
-<p>
+<h2>🔀 22. Standard Input, Output & Redirection</h2><p>
 Linux commands use standard input, standard output, and standard error to receive data and produce results.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Stream</th>
 <th align="left">File Descriptor</th>
@@ -1088,9 +1014,7 @@ Linux commands use standard input, standard output, and standard error to receiv
 <td>2</td>
 <td>Standard error output.</td>
 </tr>
-</table>
-
-💻 Pipes and Redirection
+</table>💻 Pipes and Redirection
 
 ls > files.txt                 # Write output; replace existing contents
 ls >> files.txt                # Append output to a file
@@ -1110,13 +1034,9 @@ grep "error" app.log | wc -l   # Count matching lines
 
 ---
 
-<h2>⌨️ 23. Linux Command Structure</h2>
-
-<p>
+<h2>⌨️ 23. Linux Command Structure</h2><p>
 A Linux command usually consists of a command name followed by options and arguments.
-</p>
-
-🧩 General Syntax
+</p>🧩 General Syntax
 
 command [options] [arguments]
 
@@ -1147,13 +1067,9 @@ echo $?                   # 0 usually means success; non-zero indicates failure
 
 ---
 
-<h2>🧭 24. Absolute vs Relative Paths</h2>
-
-<p>
+<h2>🧭 24. Absolute vs Relative Paths</h2><p>
 A path identifies the location of a file or directory in the filesystem.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Path Type</th>
 <th align="left">Example</th>
@@ -1184,9 +1100,7 @@ A path identifies the location of a file or directory in the filesystem.
 <td><code>~</code></td>
 <td>Shell shortcut for the current user's home directory.</td>
 </tr>
-</table>
-
-💻 Path Practice
+</table>💻 Path Practice
 
 pwd
 cd /home/student
@@ -1199,13 +1113,9 @@ cat /home/student/notes.txt
 
 ---
 
-<h2>📝 25. Linux Text Editors</h2>
-
-<p>
+<h2>📝 25. Linux Text Editors</h2><p>
 Text editors let you create and modify configuration files, scripts, source code, and documentation directly in the terminal.
-</p>
-
-<table>
+</p><table>
 <tr>
 <th align="left">Editor</th>
 <th align="left">Description</th>
@@ -1226,9 +1136,7 @@ Text editors let you create and modify configuration files, scripts, source code
 <td>Emacs</td>
 <td>Extensible editor with many additional features.</td>
 </tr>
-</table>
-
-💻 Open and Edit Files
+</table>💻 Open and Edit Files
 
 nano notes.txt          # Open a file in Nano
 vim notes.txt           # Open a file in Vim
@@ -1254,13 +1162,9 @@ less /var/log/syslog    # Read a file page by page
 
 ---
 
-<h2>📜 26. Shell Scripting Basics</h2>
-
-<p>
+<h2>📜 26. Shell Scripting Basics</h2><p>
 A shell script is a text file containing commands that a shell executes in sequence. Scripts automate repetitive tasks and combine commands, variables, conditions, loops, and functions.
-</p>
-
-💻 Your First Shell Script
+</p>💻 Your First Shell Script
 
 Create a file named "hello.sh":
 
@@ -1317,17 +1221,13 @@ greet
 
 ---
 
-<h2>🔍 27. Linux Advantages and Limitations</h2>
-
-<table>
+<h2>🔍 27. Linux Advantages and Limitations</h2><table>
 <tr>
 <th width="50%" align="left">✅ Advantages</th>
 <th width="50%" align="left">⚠️ Limitations</th>
 </tr>
 <tr>
-<td valign="top">
-
-- Open-source ecosystem.
+<td valign="top">- Open-source ecosystem.
 - Strong permission and security mechanisms.
 - Stable and reliable for many workloads.
 - Highly customizable.
@@ -1337,9 +1237,7 @@ greet
 - Many distributions are available without a purchase fee.
 
 </td>
-<td valign="top">
-
-- Some commercial applications are unavailable or have limited support.
+<td valign="top">- Some commercial applications are unavailable or have limited support.
 - Certain games and hardware may need extra configuration.
 - Beginners may face a learning curve.
 - Troubleshooting sometimes requires command-line knowledge.
@@ -1348,17 +1246,11 @@ greet
 
 </td>
 </tr>
-</table>
-
-<p>
+</table><p>
 💡 Linux is especially valuable for programming, system administration, cybersecurity education, cloud computing, and automation, but the best operating system depends on your requirements.
-</p>
+</p>---
 
----
-
-<h2>🛠️ 28. Essential Linux Commands Cheat Sheet</h2>
-
-<table>
+<h2>🛠️ 28. Essential Linux Commands Cheat Sheet</h2><table>
 <tr>
 <th align="left">Task</th>
 <th align="left">Command</th>
@@ -1431,15 +1323,11 @@ greet
 <td>Clear terminal screen</td>
 <td><code>clear</code></td>
 </tr>
-</table>
-
-⚠️ Use destructive commands such as "rm", "chmod", "chown", and disk-formatting tools carefully. Never run unfamiliar commands with elevated privileges without understanding their effects.
+</table>⚠️ Use destructive commands such as "rm", "chmod", "chown", and disk-formatting tools carefully. Never run unfamiliar commands with elevated privileges without understanding their effects.
 
 ---
 
-<h2>📚 Quick Revision</h2>
-
-<table>
+<h2>📚 Quick Revision</h2><table>
 <tr>
 <th align="left">Concept</th>
 <th align="left">Meaning</th>
@@ -1508,22 +1396,12 @@ greet
 <td>Pipe (<code>|</code>)</td>
 <td>Connects one command's output to another command's input.</td>
 </tr>
-</table>
-
----
+</table>---
 
 <p align="left">
-  <img src=""https://img.shields.io/badge/LINUX-LEARN%20BY%20DOING-E95420?style=for-the-badge&logo=linux&logoColor=white" (https://img.shields.io/badge/LINUX-LEARN%20BY%20DOING-E95420?style=for-the-badge&logo=linux&logoColor=white)"/>
-  <img src=""https://img.shields.io/badge/LEVEL-BEGINNER%20TO%20INTERMEDIATE-238636?style=for-the-badge" (https://img.shields.io/badge/LEVEL-BEGINNER%20TO%20INTERMEDIATE-238636?style=for-the-badge)"/>
-</p>
-
-<p align="left">
+  <img src="https://img.shields.io/badge/LINUX-LEARN%20BY%20DOING-E95420?style=for-the-badge&logo=linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LEVEL-BEGINNER%20TO%20INTERMEDIATE-238636?style=for-the-badge"/>
+</p><p align="left">
   <i>💡 Understand the concepts. Practice the commands. Build real skills.</i>
 </p>
-```
-
-Your imported image is here:
-
-<img src="https://github.com/user-attachments/assets/00a5cfdd-80b2-4ede-89f2-fb8e402d8308" width="100%" alt="Linux Architecture Diagram"/>
-
-It appears in section 06, “Linux Architecture: Kernel & Shell,” inside the right-hand table cell.
+```Quick note: Your notes now cover Linux fundamentals, architecture, filesystem, permissions, users, booting, packages, processes, networking, services, scripting, and practical commands—all in one organized reference.
